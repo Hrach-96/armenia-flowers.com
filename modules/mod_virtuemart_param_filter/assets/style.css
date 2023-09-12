@@ -1,0 +1,83 @@
+.filter_category a.next_depth { text-decoration:none; }
+.paramfilter a.reset { text-decoration:none; font-size:80%; float:right; }
+.mcf_button { margin-top:20px;  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3)!important;}
+.paramfilter ul { margin:0; padding:0; }
+.paramfilter li { list-style: none outside none; }
+.paramfilter .disable { color:#ccc; }
+.paramfilter .values span.count { color:#666; font-size:90%; }
+.paramfilter .values label *{ vertical-align:middle; }
+input.slider-range-gt { float:left; }
+input.slider-range-lt { float:right;}
+.price input.slider-range-gt { float:left; text-align:left; border:none; background:none; box-shadow:none;}
+.price input.slider-range-lt { float:right; text-align:right; border:none; background:none;box-shadow:none;}
+ .price .slider-double-handle { margin-bottom:-10px;}
+
+div.slider-range-gt { text-align:left; }
+div.slider-range-lt { text-align:right; }
+.slider-line { clear:both; }
+.paramfilter .heading { font-size:120%; font-weight:bold; }
+.heading img { margin-left:5px; vertical-align:middle; max-height:100%; }
+.paramfilter .values input { margin:3px; }
+table.horizontbox { width:100%; border:0; }
+table.horizontbox td,table.horizontbox tr { vertical-align:middle; text-align:center; border:0; }
+table.horizontbox td li { text-align:left; }
+div.horizontbox { float:left; width:24.4%; }
+.horizontbox select { width:90%; }
+.mcf_form select { max-width:100%; }
+.mcf_tip { font-size:80%; line-height:80%; cursor:pointer; color:#666; vertical-align:text-top; }
+form.mcf_mod_ajax_div input[type=submit] { display:none; }
+
+
+/*!
+ * jQuery UI Slider 1.8.20
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Slider#theming
+ */
+.slider_active { height:10px; top:-1px; position:absolute; z-index:1; min-width:2%; }
+.slider_active.count-0 { min-width:0%; }
+.ui-slider { position: relative; text-align: left; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 15px; height: 15px; cursor: default; background:#f0f0f0; border:1px solid #f0f0f0; box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.2); border-radius:3px; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: 7px; display: block; border: 0; background-position: 0 0; background:#eee; }
+
+.ui-slider-horizontal { height: 8px; border:1px solid #e4e4e2; border-radius:3px; margin:5px 0;box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.2); }
+.ui-slider-horizontal .ui-slider-handle { top: -5px; margin-left: -6px; }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+.ui-slider-vertical { width: 8px; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: -3px; margin-left: 0; margin-bottom: -6px; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
+
+/* Colors */
+.values-named::before, .values-named::after { content: ""; display: table; }
+.values-named::after { clear: both; }
+.values-named {  }
+.values-named li { float:left; margin:0 0 0px 5px; padding-left:0; list-style:none outside none; background:none; }
+.values-named li label { display:block; width:20px; height:20px; border:1px solid #ccc; cursor:pointer; position:relative; }
+.values-named li label.checked { border:1px solid #000; }
+.values-named li label * { display:none; }
+.values-named li.hover label span.f-title { display:block; position:absolute; top:-12px; left:50%; z-index:3; text-align: center; }
+.values-named li.hover label span.f-title b { display:block; padding:0 2px; margin-left:-50%; margin-top:-10px; background:#fff; width:100%; border:1px solid #eee; }
+.values-named li label span.color { display:block; width:18px; height:18px; margin:1px; }
+	.values-named label.raznotsvetnyj span.color { background:url(multicolors.jpg) no-repeat center center; }
+	.values-named label.belyj span.color { background-color:#fff; }
+	.values-named label.chernyj span.color { background-color:#000; }
+	.values-named label.yellow span.color { background-color:#ff0; }
+	.values-named label.red span.color { background-color:#f00 }
+		.values-named label.green span.color { background-color:#090;}
+	.values-named label.blue span.color { background-color:#0CF; }
+	.values-named label.black span.color { background-color:#000; }
+
+/*	.values-named label.COLOR span.color { background-color:#; } */
+/*	template css */
+.mcf_form  .chzn-container-multi .chzn-choices .search-field input { height:16px; width:98%!important;}
+.chzn-container {width:98%!important;}
+.chzn-drop {width:99%!important; padding-left:0px;}#body_loader { position:relative; width:100%; }	#body_loader > div { position:absolute; height:60px; width:100%; background:url('ajax-loader.gif') no-repeat center center; }
+div.paramfilter .values-named li label .color { }

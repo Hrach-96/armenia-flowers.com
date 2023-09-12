@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+
+	<fields name="thememagic" addfieldpath="/plugins/system/t3/includes/depend">
+
+		<fieldset name="typo_params" label="T3_TM_TYPO">
+			<field name="typo_params_default" type="t3depend" function="@group">
+				<option for="font-family-base" value="undefined">font-family-base-custom</option>
+				<option for="headings-font-family" value="undefined">headings-font-family-custom</option>
+			</field>
+
+			<field name="font-size-base" type="text" size="10" class="input-tiny t3tm-dimension" 
+				label="T3_TM_VARS_FONTSIZE_LABEL"
+				description="T3_TM_VARS_FONTSIZE_DESC" />
+			<!--  <field name="headings-font-family-custom" type="text" size="30" class="t3tm-font"
+				label="T3_TM_VARS_FONTFAMILY_CUSTOM_LABEL"
+				description="T3_TM_VARS_FONTFAMILY_CUSTOM_DESC" /> -->
+
+		</fieldset>
+		<fieldset name="scaffolding_params" label="T3_TM_SCAFFOLDING">   
+				
+				<field name="bodyBackground" type="color" class="t3tm-color" label="Body Background" description="" />
+
+				<field name="TopHeaderBackground" type="color" class="t3tm-color" label="Top Header Background" description="" />
+				<field name="headerBorderColor" type="color" class="t3tm-color" label="Top Header Border Color" description="" />
+				<field name="headerColor" type="color" class="t3tm-color" label="Top Header Text Color" description="" />
+				<field name="headerColorHover" type="color" class="t3tm-color" label="Top Header Text Color Hover" description="" />
+				<field name="off-canvas" type="color" class="t3tm-color" label="off-canvas Background" description="" />
+				<field name="HeaderBackground" type="color" class="t3tm-color" label="Header Background" description="" />
+
+				<field name="menuColorLvl" type="color" class="t3tm-color" label="Menu text color" description="" />
+				<field name="menuColorLvlAct" type="color" class="t3tm-color" label="Menu text color active" description="" />
+				<field name="menuColor2" type="color" class="t3tm-color" label="Menu text2 color" description="" />
+				<field name="menuColor2Act" type="color" class="t3tm-color" label="Menu text2 color active" description="" />
+				<field name="menuBgColor" type="color" class="t3tm-color" label="Menu dropdown" description="" />
+			</fieldset>
+		<fieldset name="colors_params" label="T3_TM_COLORS">   
+		   
+			<field name="global" type="color" class="t3tm-color" label="Global color theme" description="" />
+			<field name="global2" type="color" class="t3tm-color" label="Global color2 theme" description="" />
+			<field name="global3" type="color" class="t3tm-color" label="Global color3 theme" description="" />
+			<field name="textColor" type="color" class="t3tm-color" label="Headings Color text pages" description="" />
+			<field name="textColor2" type="color" class="t3tm-color" label="Body Color text2 pages" description="" />
+			<field name="Hot" type="color" class="t3tm-color" label="Label Hot" description="" />
+			<field name="New" type="color" class="t3tm-color" label="Label New" description="" />
+			<field name="Sale" type="color" class="t3tm-color" label="Label Sale" description="" />
+			<field name="Offer" type="color" class="t3tm-color" label="Label Offer" description="" />
+			<field name="Sold" type="color" class="t3tm-color" label="Label Sold" description="" />
+
+			<field name="Link" type="color" class="t3tm-color" label="Global link color theme" description="" />
+			<field name="LinkHover" type="color" class="t3tm-color" label="Global link hover color theme" description="" />
+			<field name="Link2" type="color" class="t3tm-color" label="Global link2 color theme" description="" />
+			<field name="LinkHover2" type="color" class="t3tm-color" label="Global link2 hover  color theme" description="" />
+			
+			<field name="borderColor" type="color" class="t3tm-color" label="Global border color theme" description="" />
+			<field name="inputColor" type="color" class="t3tm-color" label="Home input background theme" description="" />
+			<field name="inputBorder" type="color" class="t3tm-color" label="Global input border theme" description="" />
+			<field name="inputBg" type="color" class="t3tm-color" label="Global input background theme" description="" />
+
+			<field name="btnbg" type="color" class="t3tm-color" label="Global button background" description="" />
+			<field name="btncolor" type="color" class="t3tm-color" label="Global button color " description="" />
+			<field name="btnbgAct" type="color" class="t3tm-color" label="Global button active background" description="" />
+			<field name="btncolorAct" type="color" class="t3tm-color" label="Global button active color" description="" />
+
+			<field name="btnbgReset" type="color" class="t3tm-color" label="Global button reset background" description="" />
+			<field name="btncolorReset" type="color" class="t3tm-color" label="Global button reset color" description="" />
+			<field name="btnbgActReset" type="color" class="t3tm-color" label="Global button reset active background" description="" />
+			<field name="btncolorActReset" type="color" class="t3tm-color" label="Global button reset active color" description="" />
+
+			<field name="linkBgHover" type="color" class="t3tm-color" label="Global some link background" description="" />
+		</fieldset>
+
+		<fieldset name="links_params" label="T3_TM_FOOTER">
+			<field name="t3-footer-background-top" type="color" class="t3tm-color" label="Footer background top" description="" />
+			<field name="t3-footer-background" type="color" class="t3tm-color" label="T3_VARS_FOOTER_BG_LABEL" description="" />
+			<field name="t3-footer-title" type="color" class="t3tm-color" label="Footer Title" description="" />
+			<field name="t3-footer-text-color" type="color" class="t3tm-color" label="Footer text color" description="" />
+			<field name="t3-footer-text-link" type="color" class="t3tm-color" label="Footer text color Link" description="" />
+			<field name="t3-footer-text-link2" type="color" class="t3tm-color" label="Footer text color Link Link List" description="" />
+			<field name="t3-footer-text-link-hover" type="color" class="t3tm-color" label="Footer text color Link Hover" description="" />
+			<field name="t3-footer-text-link-hover2" type="color" class="t3tm-color" label="Footer text color Link Hover List" description="" />
+
+			<field name="t3-copyright-background" type="color" class="t3tm-color" label="Copyright Background" description="" />
+			<field name="t3-copyright-text-color" type="color" class="t3tm-color" label="Copyright Text Color" description="" />
+			<field name="t3-copyright-text-link" type="color" class="t3tm-color" label="Copyright Text Color Link" description="" />
+			
+			<field name="t3-copyright-text-link-hover" type="color" class="t3tm-color" label="Copyright Text Color Link Hover" description="" />
+
+		</fieldset>
+		<fieldset name="grid_params" label="T3_TM_GRID">
+			<!-- Grid -->
+
+			<field name="container-lg" type="text" default="1170px" class="t3tm-dimension" label="T3_TM_VARS_SCFD_LG_WIDTH_LABEL" description="T3_TM_VARS_SCFD_LG_WIDTH_DESC" />
+
+			<field name="container-md" type="text" default="970px" class="t3tm-dimension" label="T3_TM_VARS_SCFD_MID_WIDTH_LABEL" description="T3_TM_VARS_SCFD_MID_WIDTH_DESC" />
+			
+			<field name="container-sm" type="text" default="750px" class="t3tm-dimension" label="T3_TM_VARS_SCFD_SM_WIDTH_LABEL" description="T3_TM_VARS_SCFD_SM_WIDTH_DESC" />
+			
+			<field name="grid-gutter-width" type="text" default="30px" class="t3tm-dimension" label="T3_TM_VARS_SCFD_GUTTER_LABEL" description="T3_TM_VARS_SCFD_GUTTER_DESC" />
+
+			<!-- End Grid -->
+		</fieldset>
+		<fieldset name="advanced_params" label="T3_TM_ADVANCED">
+			<field name="import-external-urls" type="textarea" cols="30" rows="5"
+				label="T3_TM_VARS_IMPORT_EXTERNAL_URLS_LABEL"
+				description="T3_TM_VARS_IMPORT_EXTERNAL_URLS_DESC" />
+    </fieldset>
+	</fields>
+</form>

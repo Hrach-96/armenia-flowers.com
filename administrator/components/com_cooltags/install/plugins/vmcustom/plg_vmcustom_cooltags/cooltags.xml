@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="3.3" type="plugin" group="vmcustom" method="upgrade">	
+    <name>VMCustom - Cooltags</name>
+    <creationDate>April 2015</creationDate>
+    <author>Artem Sidorov</author>
+    <authorUrl>http://www.artofsites.ru</authorUrl>
+    <copyright>Copyright (C) 2015. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>1.0</version>
+    <description>Adds tagging feature to Virtuemart products. This plugin requires the com_cooltags component. It also comes with its fellow (optional) search plugin extending Virtuemart product search to related product tags.</description>
+    <languages>
+        <language tag="en-GB">en-GB.plg_vmcustom_cooltags.ini</language>
+		<language tag="fr-FR">fr-FR.plg_vmcustom_cooltags.ini</language>
+    </languages>
+    <files>
+		<folder>css</folder>
+		<folder>js</folder>
+        <filename plugin="cooltags">cooltags.php</filename>
+    </files>
+    <params addpath="/administrator/components/com_virtuemart/elements">
+        <param type="vmjpluginwarning" />
+		
+    </params>
+</extension>

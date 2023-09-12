@@ -1,0 +1,118 @@
+/**
+ * @author ITechnoDev, LLC
+ * @copyright (C) 2014 - ITechnoDev, LLC
+ * @license GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ **/
+
+/**** Isotope Filtering ****/
+#container {overflow:inherit!important; padding:0!important;}
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.6s;
+     -moz-transition-duration: 0.6s;
+      -ms-transition-duration: 0.6s;
+       -o-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+ 
+/* If you do disable transforms, but still want to use CSS transitions, you’ll need add the following CSS  
+.isotope .isotope-item {
+  -webkit-transition-property: top, left, opacity;
+     -moz-transition-property: top, left, opacity;
+      -ms-transition-property: top, left, opacity;
+       -o-transition-property: top, left, opacity;
+          transition-property: top, left, opacity;
+}
+*/
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+/* Custom CSS for module */
+
+#container {
+	word-wrap: break-word;
+	/*border : solid 1px gray;*/
+	padding : 5px ;
+	margin: auto;
+}
+.itVMProductBlock.izotop {
+	position:relative;
+	}
+.itVMProductImage a:hover, .itVMProductImage a:active, .itVMProductImage a:focus
+{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+
+
+.itemmart{
+}
+#options li { display:inline-block;}
+ 
+#infscr-loading {
+    background-color:none;
+    border-radius: 0;
+    bottom: -20px;
+    box-shadow:none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    height: auto;
+    left: 0;
+    padding: 22px;
+    position: absolute;
+    text-align: center;
+    width: auto;
+    z-index: 100; 
+}
+#infscr-loading div { display:none;}
+#next{ 
+    margin: 0px auto;
+	margin-bottom:20px;
+}
+

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<extension type="plugin" version="3.0" method="upgrade" group="system">
+    <name>vmVendor</name>
+    <author>olejenya</author>
+    <authorEmail>olejenya-info@gmail.com</authorEmail>
+    <copyright>olejenya</copyright>
+    <version>1.0</version>
+    <description>PLG_VMVENDOR_DESC</description>
+    <scriptfile>script.php</scriptfile>
+    <files>
+        <filename plugin="vmvendor">vmvendor.php</filename>
+        <filename>index.html</filename>
+    </files>
+	<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_vmvendor.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.plg_system_vmvendor.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_vmvendor.sys.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.plg_system_vmvendor.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>

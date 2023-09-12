@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.0" method="upgrade" group="system">
+    <name>quick</name>
+    <author>olejenya</author>
+    <authorEmail>olejenya-info@gmail.com</authorEmail>
+    <version>1.0</version>
+    <description>PLG_QUICK_DESC</description>
+    <scriptfile>script.php</scriptfile>
+    <files>
+        <filename plugin="quick">quick.php</filename>
+		<filename>quick.xml</filename>
+        <filename>index.html</filename>
+		<folder>quick</folder>
+    </files>
+	<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_quick.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.plg_system_quick.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_quick.sys.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.plg_system_quick.sys.ini</language>
+    </languages>
+</extension>

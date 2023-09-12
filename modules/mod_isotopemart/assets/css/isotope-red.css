@@ -1,0 +1,1729 @@
+/**
+ * @author ITechnoDev, LLC
+ * @copyright (C) 2014 - ITechnoDev, LLC
+ * @license GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ **/
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+ 
+/* If you do disable transforms, but still want to use CSS transitions, you’ll need add the following CSS  
+.isotope .isotope-item {
+  -webkit-transition-property: top, left, opacity;
+     -moz-transition-property: top, left, opacity;
+      -ms-transition-property: top, left, opacity;
+       -o-transition-property: top, left, opacity;
+          transition-property: top, left, opacity;
+}
+*/
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+/* Custom CSS for module */
+
+#container {
+	word-wrap: break-word;
+	/*border : solid 1px gray;*/
+	padding : 5px ;
+	margin: auto;
+}
+
+.itVMProductImage a:hover, .itVMProductImage a:active, .itVMProductImage a:focus
+{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+
+
+.itemmart{
+float: left ;    
+margin: 15px;     
+text-align: center; 
+display: block;
+background: #F3F3F3;
+border: 1px solid;
+border-color: #e5e5e5 #dbdbdb #d2d2d2;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+-moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+min-width  : 150px ;  
+min-height : 184px ;
+overflow: hidden;
+cursor: default;
+}
+
+ 
+#options {
+  	margin-bottom: 20px;
+}
+
+
+#filters{
+	 float : left ;
+}
+
+ 
+#sort-by{
+  	 float: right;
+}
+
+#sort-direction {
+  	 float: right;
+ 	 margin-left: 20px;
+}
+
+
+#filters li{
+    display: inline-block;
+    margin-right: 2px;
+}
+
+#sort-by li{
+     display: inline-block;
+}
+
+#sort-direction li{
+     display: inline-block;
+}
+
+
+#options li a {
+	-moz-user-select: none;
+	border: 0 none;
+    border-radius: 4px 4px 4px 4px;
+    color: #606060;
+    cursor: pointer;
+    display: inline-block;
+   	font-size: 12px;
+    font-weight: normal;
+    line-height: 1.7em;
+    margin: 0 0 15px;
+    padding: 3px;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    vertical-align: middle;	
+}
+
+#options li a.selected {
+    -moz-user-select: none;
+    background: none repeat scroll 0 0 #FD6060 ;
+    border: 0 none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+ 	font-size: 12px;
+    font-weight: normal;
+    line-height: 1.7em;  
+    margin: 0 0 15px;  
+    padding: 3px 6px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    vertical-align: middle;	 
+    /*transition: all 0.1s ease-in 0s;*/ 
+}
+
+#options li a:hover {
+text-decoration: none;
+background-color: #eeeeee;
+color : #606060 ;
+}
+
+#options li a:link, a:visited,a:active  {
+text-decoration: none;
+}
+ 
+.itemmart h3 {
+    line-height: 0.7;
+    text-shadow: 0 1px 1px gray;
+    font-size: 1.1em;
+}
+
+.itVMProductImage {
+    position: relative;  
+}
+
+.itemmart-img {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 5px 5px 0 0;
+    position: relative
+}
+
+.itVMProductName{
+    background: none repeat scroll 0 0 rgba(253,96,96, 0.7);
+    color: white !important;
+    left: 0;
+    margin: 0 !important;
+    padding: 0.6rem;
+    right: 0;
+    transition: background 0.7s linear 0s;
+    text-shadow: 1px 1px 3px rgba(255,255,255,0.3);
+} 
+
+.itVMProductName > h4 a:hover, .itVMProductName > h4 a:active, .itVMProductName > h4 a:focus {
+    background: none !important;
+    color: #F3F3F3 !important;
+}
+
+.itVMProductName > h4, .itVMProductName > h4 a {
+	color: white !important;
+	font-size: 1.3em;
+	margin: !important;
+	text-decoration: none !important;
+}
+
+.itVMProductSalesPrice{
+	color: #FD6060 ;
+    font-size: 135%;
+    font-weight: 600;
+}
+
+.it-price-inner{
+    cursor: text;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+.itVMProductDiscountAmount {
+    color: #D9673B !important;
+    text-decoration: line-through;
+}
+
+ 
+.itaddtocart-area {
+    float: left;
+    width: 130px;
+}
+
+.default-addtocart-area {
+    margin: auto;
+    width: 225px;
+}
+
+
+.default-addtocart-area .product-fields {
+    background-color: rgba(253,96,96, 0.2) !important;
+    display: inline-block !important;
+    padding: 6px 0 12px !important;
+    width: 100% !important;
+}
+
+
+.default-addtocart-area .addtocart-button input{
+    background: #FD6060 !important;
+    border: 1px solid #FD6060 !important;
+}
+
+.itaddtocart-btn input{
+    background: url("../img/cart.png") no-repeat scroll 6px 3px #fc2e2e;
+    border: 1px solid #fc2e2e !important;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    height: 46px;
+    letter-spacing: 1px;
+    margin: -5px 0 0 10px;
+    padding: 0;
+    text-align: center;
+    text-indent: -9999px;
+    width: 56px;
+}
+ 
+
+.itaddtocart-btn .addtocart-button-disabled {
+    background: none repeat scroll 0 0 #fc2e2e;
+    text-indent: 0;
+}
+ 
+
+.itemmart .vote {
+    margin-top: 10px;
+}
+
+.itemmart .product-fields-title {
+    color: #868686;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.itemmart span.addtocart-button input.addtocart-button-disabled {
+    height: 25px !important;
+    margin:0 !important;
+    color: #FFFFFF !important;
+}
+
+.itemmart .addtocart-area .product-fields {
+    background-color: #ECECEC !important;
+    display: inline-block !important;
+    padding: 6px 0 12px !important;
+    width: 100% !important;
+}
+
+ 
+ .itNewBadge{
+    background: url("../img/new.png") no-repeat scroll -16px -19px rgba(0, 0, 0, 0);
+    height: 117px;
+    position: absolute;
+    top: 0;
+    width: 120px;
+}
+ 
+.itSalesBadge {
+    background: url("../img/sale.png") no-repeat scroll 6px -22px rgba(0, 0, 0, 0);
+    height: 150px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 120px;
+}
+
+
+ 
+.it-product-action {
+
+    width: 225px;
+    margin: auto;
+}
+ 
+#infscr-loading {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1em 1em 1em 1em;
+    bottom: 350px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset, 1px 1px 1px rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    height: 73px;
+    left: 44%;
+    padding: 22px;
+    position: fixed;
+    text-align: center;
+    width: 67px;
+    z-index: 100; 
+}
+
+ 
+
+.itemmart a.info > img {
+	
+	-webkit-transform: none !important;
+	-moz-transform: none !important;
+	-o-transform: none !important;
+	-ms-transform: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+}
+
+
+/* Begin Hover Images */
+
+ 
+.itemmart .mask {
+    overflow: hidden;
+    top: 0 ;
+    bottom : 0 ;
+    right : 0 ;
+    left: 0 ;
+    position: absolute;
+    z-index:100;
+}
+.itemmart .header-mask {
+    text-transform: uppercase;
+    color: #fff !important ;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px !important;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.itemmart .des-mask {
+    font-family: Georgia, serif;
+    position: relative;
+    color: #fff;
+    padding: 3px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.itemmart a.info {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    height: 44px;
+    border: 1px solid #fc2e2e !important;
+    background: #fc2e2e;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    margin: -6px 0 0 10px;
+    padding: 0;
+    text-align: center;
+    width: 56px;
+}
+
+.itemmart a.info > img {
+	padding-top: 2px;
+	
+	/*
+    margin-left: -3px;
+    margin-top: 3px; */
+}
+
+.itemmart a.info:hover {
+    background: #fc2e2e!important;
+}
+
+
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(253,96,96,0.8);
+    transition: all 0.4s ease-in-out;
+}
+.view-first .header-mask {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first .des-mask {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+.view-first a.info{
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.view-first .itaddtocart-area
+{
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first:hover .mask {
+    opacity: 1;
+}
+.view-first:hover .header-mask,
+.view-first:hover .des-mask,
+.view-first:hover a.info,
+.view-first:hover .itaddtocart-area {
+    opacity: 1;
+   transform: translateY(0px);
+}
+.view-first:hover .des-mask {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
+.view-first:hover .itaddtocart-area {
+    transition-delay: 0.2s;
+}
+
+
+ 
+
+.view-second img {
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   -o-transition: all 0.2s ease-in;
+   -ms-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
+}
+.view-second .mask {
+   background-color: rgba(253,96,96,0.8);
+   width: 300px;
+   padding: 60px;
+   height: 300px;
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: translate(265px, 145px) rotate(45deg);
+   -moz-transform: translate(265px, 145px) rotate(45deg);
+   -o-transform: translate(265px, 145px) rotate(45deg);
+   -ms-transform: translate(265px, 145px) rotate(45deg);
+   transform: translate(265px, 145px) rotate(45deg);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.view-second .header-mask {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+   background: transparent;
+   margin: 20px 40px 0px 40px;
+   -webkit-transform: translate(200px, -200px);
+   -moz-transform: translate(200px, -200px);
+   -o-transform: translate(200px, -200px);
+   -ms-transform: translate(200px, -200px);
+   transform: translate(200px, -200px);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.view-second .des-mask {
+   -webkit-transform: translate(-200px, 200px);
+   -moz-transform: translate(-200px, 200px);
+   -o-transform: translate(-200px, 200px);
+   -ms-transform: translate(-200px, 200px);
+   transform: translate(-200px, 200px);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.view-second a.info {
+   -webkit-transform: translate(0px, 100px);
+   -moz-transform: translate(0px, 100px);
+   -o-transform: translate(0px, 100px);
+   -ms-transform: translate(0px, 100px);
+   transform: translate(0px, 100px);
+   -webkit-transition: all 0.2s 0.1s ease-in-out;
+   -moz-transition: all 0.2s 0.1s ease-in-out;
+   -o-transition: all 0.2s 0.1s ease-in-out;
+   -ms-transition: all 0.2s 0.1s ease-in-out;
+   transition: all 0.2s 0.1s ease-in-out;
+}
+
+.view-second .itaddtocart-area {
+   -webkit-transform: translate(0px, 100px);
+   -moz-transform: translate(0px, 100px);
+   -o-transform: translate(0px, 100px);
+   -ms-transform: translate(0px, 100px);
+   transform: translate(0px, 100px);
+   -webkit-transition: all 0.2s 0.1s ease-in-out;
+   -moz-transition: all 0.2s 0.1s ease-in-out;
+   -o-transition: all 0.2s 0.1s ease-in-out;
+   -ms-transition: all 0.2s 0.1s ease-in-out;
+   transition: all 0.2s 0.1s ease-in-out;
+}
+
+.view-second:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: translate(-80px, -125px) rotate(45deg);
+   -moz-transform: translate(-80px, -125px) rotate(45deg);
+   -o-transform: translate(-80px, -125px) rotate(45deg);
+   -ms-transform: translate(-80px, -125px) rotate(45deg);
+   transform: translate(-80px, -125px) rotate(45deg);
+}
+.view-second:hover .header-mask {
+   -webkit-transform: translate(0px,0px);
+   -moz-transform: translate(0px,0px);
+   -o-transform: translate(0px,0px);
+   -ms-transform: translate(0px,0px);
+   transform: translate(0px,0px);
+   -webkit-transition-delay: 0.3s;
+   -moz-transition-delay: 0.3s;
+   -o-transition-delay: 0.3s;
+   -ms-transition-delay: 0.3s;
+   transition-delay: 0.3s;
+}
+.view-second:hover .des-mask {
+   -webkit-transform: translate(0px,0px);
+   -moz-transform: translate(0px,0px);
+   -o-transform: translate(0px,0px);
+   -ms-transform: translate(0px,0px);
+   transform: translate(0px,0px);
+   -webkit-transition-delay: 0.4s;
+   -moz-transition-delay: 0.4s;
+   -o-transition-delay: 0.4s;
+   -ms-transition-delay: 0.4s;
+   transition-delay: 0.4s;
+}
+.view-second:hover a.info {
+   -webkit-transform: translate(0px,0px);
+   -moz-transform: translate(0px,0px);
+   -o-transform: translate(0px,0px);
+   -ms-transform: translate(0px,0px);
+   transform: translate(0px,0px);
+   -webkit-transition-delay: 0.5s;
+   -moz-transition-delay: 0.5s;
+   -o-transition-delay: 0.5s;
+   -ms-transition-delay: 0.5s;
+   transition-delay: 0.5s;
+}
+
+.view-second:hover .itaddtocart-area {
+   -webkit-transform: translate(0px,0px);
+   -moz-transform: translate(0px,0px);
+   -o-transform: translate(0px,0px);
+   -ms-transform: translate(0px,0px);
+   transform: translate(0px,0px);
+   -webkit-transition-delay: 0.5s;
+   -moz-transition-delay: 0.5s;
+   -o-transition-delay: 0.5s;
+   -ms-transition-delay: 0.5s;
+   transition-delay: 0.5s;
+}
+ 
+
+
+.view-third img {
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   -o-transition: all 0.2s ease-in;
+   -ms-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
+}
+.view-third .mask {
+   background-color: rgba(253,96,96,0.8);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: translate(460px, -100px) rotate(180deg);
+   -moz-transform: translate(460px, -100px) rotate(180deg);
+   -o-transform: translate(460px, -100px) rotate(180deg);
+   -ms-transform: translate(460px, -100px) rotate(180deg);
+   transform: translate(460px, -100px) rotate(180deg);
+   -webkit-transition: all 0.2s 0.4s ease-in-out;
+   -moz-transition: all 0.2s 0.4s ease-in-out;
+   -o-transition: all 0.2s 0.4s ease-in-out;
+   -ms-transition: all 0.2s 0.4s ease-in-out;
+   transition: all 0.2s 0.4s ease-in-out;
+}
+.view-third .header-mask {
+   -webkit-transform: translateY(-100px);
+   -moz-transform: translateY(-100px);
+   -o-transform: translateY(-100px);
+   -ms-transform: translateY(-100px);
+   transform: translateY(-100px);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.view-third .des-mask {
+   -webkit-transform: translateX(300px) rotate(90deg);
+   -moz-transform: translateX(300px) rotate(90deg);
+   -o-transform: translateX(300px) rotate(90deg);
+   -ms-transform: translateX(300px) rotate(90deg);
+   transform: translateX(300px) rotate(90deg);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.view-third a.info {
+   -webkit-transform: translateY(-200px);
+   -moz-transform: translateY(-200px);
+   -o-transform: translateY(-200px);
+   -ms-transform: translateY(-200px);
+   transform: translateY(-200px);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+
+.view-third .itaddtocart-area {
+   -webkit-transform: translateY(-200px);
+   -moz-transform: translateY(-200px);
+   -o-transform: translateY(-200px);
+   -ms-transform: translateY(-200px);
+   transform: translateY(-200px);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+.view-third:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   -o-transition-delay: 0s;
+   -ms-transition-delay: 0s;
+   transition-delay: 0s;
+   -webkit-transform: translate(0px, 0px);
+   -moz-transform: translate(0px, 0px);
+   -o-transform: translate(0px, 0px);
+   -ms-transform: translate(0px, 0px);
+   transform: translate(0px, 0px);
+}
+.view-third:hover .header-mask {
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.5s;
+   -moz-transition-delay: 0.5s;
+   -o-transition-delay: 0.5s;
+   -ms-transition-delay: 0.5s;
+   transition-delay: 0.5s;
+}
+.view-third:hover .des-mask {
+   -webkit-transform: translateX(0px) rotate(0deg);
+   -moz-transform: translateX(0px) rotate(0deg);
+   -o-transform: translateX(0px) rotate(0deg);
+   -ms-transform: translateX(0px) rotate(0deg);
+   transform: translateX(0px) rotate(0deg);
+   -webkit-transition-delay: 0.4s;
+   -moz-transition-delay: 0.4s;
+   -o-transition-delay: 0.4s;
+   -ms-transition-delay: 0.4s;
+   transition-delay: 0.4s;
+}
+.view-third:hover a.info {
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.3s;
+   -moz-transition-delay: 0.3s;
+   -o-transition-delay: 0.3s;
+   -ms-transition-delay: 0.3s;
+   transition-delay: 0.3s;
+}
+
+.view-third:hover .itaddtocart-area {
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.3s;
+   -moz-transition-delay: 0.3s;
+   -o-transition-delay: 0.3s;
+   -ms-transition-delay: 0.3s;
+   transition-delay: 0.3s;
+}
+
+
+.view-tenth img {
+   -webkit-transform: scaleY(1);
+   -moz-transform: scaleY(1);
+   -o-transform: scaleY(1);
+   -ms-transform: scaleY(1);
+   transform: scaleY(1);
+   -webkit-transition: all 0.7s ease-in-out;
+   -moz-transition: all 0.7s ease-in-out;
+   -o-transition: all 0.7s ease-in-out;
+   -ms-transition: all 0.7s ease-in-out;
+   transition: all 0.7s ease-in-out;
+}
+.view-tenth .mask {
+   background-color: rgba(253,96,96,0.8);
+   -webkit-transition: all 0.5s linear;
+   -moz-transition: all 0.5s linear;
+   -o-transition: all 0.5s linear;
+   -ms-transition: all 0.5s linear;
+   transition: all 0.5s linear;
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+}
+.view-tenth .header-mask {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+   background: transparent;
+   margin: 20px 40px 0px 40px;
+   -webkit-transform: scale(0);
+   -moz-transform: scale(0);
+   -o-transform: scale(0);
+   -ms-transform: scale(0);
+   transform: scale(0);
+   color: #333;
+   -webkit-transition: all 0.5s linear;
+   -moz-transition: all 0.5s linear;
+   -o-transition: all 0.5s linear;
+   -ms-transition: all 0.5s linear;
+   transition: all 0.5s linear;
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+}
+.view-tenth .des-mask {
+
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: scale(0);
+   -moz-transform: scale(0);
+   -o-transform: scale(0);
+   -ms-transform: scale(0);
+   transform: scale(0);
+   -webkit-transition: all 0.5s linear;
+   -moz-transition: all 0.5s linear;
+   -o-transition: all 0.5s linear;
+   -ms-transition: all 0.5s linear;
+   transition: all 0.5s linear;
+}
+.view-tenth a.info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: scale(0);
+   -moz-transform: scale(0);
+   -o-transform: scale(0);
+   -ms-transform: scale(0);
+   transform: scale(0);
+   -webkit-transition: all 0.5s linear;
+   -moz-transition: all 0.5s linear;
+   -o-transition: all 0.5s linear;
+   -ms-transition: all 0.5s linear;
+   transition: all 0.5s linear;
+}
+
+.view-tenth .itaddtocart-area {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: scale(0);
+   -moz-transform: scale(0);
+   -o-transform: scale(0);
+   -ms-transform: scale(0);
+   transform: scale(0);
+   -webkit-transition: all 0.5s linear;
+   -moz-transition: all 0.5s linear;
+   -o-transition: all 0.5s linear;
+   -ms-transition: all 0.5s linear;
+   transition: all 0.5s linear;
+}
+
+
+
+.view-tenth:hover img {
+   -webkit-transform: scale(10);
+   -moz-transform: scale(10);
+   -o-transform: scale(10);
+   -ms-transform: scale(10);
+   transform: scale(10);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+}
+.view-tenth:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+.view-tenth:hover .header-mask,.view-tenth:hover .des-mask,.view-tenth:hover a.info,.view-tenth:hover .itaddtocart-area {
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+	
+
+
+/* NINTH EXAMPLE*/
+.view-ninth .mask-1, .view-ninth .mask-2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 361px;
+    width: 361px;
+    background: rgba(119, 0, 36, 0.5);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out 0.6s;
+    -moz-transition: all 0.3s ease-in-out 0.6s;
+    -o-transition: all 0.3s ease-in-out 0.6s;
+    transition: all 0.3s ease-in-out 0.6s;
+}
+.view-ninth .mask-1 {
+    left: auto;
+    right: 0;
+    -webkit-transform: rotate(56.5deg) translateX(-180px);
+    -moz-transform: rotate(56.5deg) translateX(-180px);
+    -o-transform: rotate(56.5deg) translateX(-180px);
+    -ms-transform: rotate(56.5deg) translateX(-180px);
+    transform: rotate(56.5deg) translateX(-180px);
+    -webkit-transform-origin: 100% 0%;
+    -moz-transform-origin: 100% 0%;
+    -o-transform-origin: 100% 0%;
+    -ms-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+}
+.view-ninth .mask-2 {
+    top: auto;
+    bottom: 0;
+    -webkit-transform: rotate(56.5deg) translateX(180px);
+    -moz-transform: rotate(56.5deg) translateX(180px);
+    -o-transform: rotate(56.5deg) translateX(180px);
+    -ms-transform: rotate(56.5deg) translateX(180px);
+    transform: rotate(56.5deg) translateX(180px);
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+}
+.view-ninth .content {
+    background: rgba(0, 0, 0, 0.9);
+    height: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    width: 361px;
+    overflow: hidden;
+    -webkit-transform: rotate(-33.5deg) translate(-112px, 166px);
+    -moz-transform: rotate(-33.5deg) translate(-112px, 166px);
+    -o-transform: rotate(-33.5deg) translate(-112px, 166px);
+    -ms-transform: rotate(-33.5deg) translate(-112px, 166px);
+    transform: rotate(-33.5deg) translate(-112px, 166px);
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transition: all 0.4s ease-in-out 0.3s;
+    -moz-transition: all 0.4s ease-in-out 0.3s;
+    -o-transition: all 0.4s ease-in-out 0.3s;
+    transition: all 0.4s ease-in-out 0.3s;
+}
+.view-ninth .header-mask {
+    background: transparent;
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.view-ninth a.info {
+    display: none;
+}
+
+.view-ninth .itaddtocart-area {
+    display: none;
+}
+
+.view-ninth:hover .content {
+    height: 120px;
+    width: 300px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+    top: 40px;
+    -webkit-transform: rotate(0deg) translate(0, 0);
+    -moz-transform: rotate(0deg) translate(0, 0);
+    -o-transform: rotate(0deg) translate(0, 0);
+    -ms-transform: rotate(0deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0);
+}
+.view-ninth:hover .mask-1, .view-ninth:hover .mask-2 {
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.view-ninth:hover .mask-1 {
+    -webkit-transform: rotate(56.5deg) translateX(1px);
+    -moz-transform: rotate(56.5deg) translateX(1px);
+    -o-transform: rotate(56.5deg) translateX(1px);
+    -ms-transform: rotate(56.5deg) translateX(1px);
+    transform: rotate(56.5deg) translateX(1px);
+}
+.view-ninth:hover .mask-2 {
+    -webkit-transform: rotate(56.5deg) translateX(-1px);
+    -moz-transform: rotate(56.5deg) translateX(-1px);
+    -o-transform: rotate(56.5deg) translateX(-1px);
+    -ms-transform: rotate(56.5deg) translateX(-1px);
+    transform: rotate(56.5deg) translateX(-1px);
+}
+
+
+
+.view-eighth .mask {
+   background-color: rgba(253,96,96,0.8);
+   top: -200px;
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.3s ease-out 0.5s;
+   -moz-transition: all 0.3s ease-out 0.5s;
+   -o-transition: all 0.3s ease-out 0.5s;
+   -ms-transition: all 0.3s ease-out 0.5s;
+   transition: all 0.3s ease-out 0.5s;
+}
+.view-eighth .header-mask {
+   -webkit-transform: translateY(-200px);
+   -moz-transform: translateY(-200px);
+   -o-transform: translateY(-200px);
+   -ms-transform: translateY(-200px);
+   transform: translateY(-200px);
+   -webkit-transition: all 0.2s ease-in-out 0.1s;
+   -moz-transition: all 0.2s ease-in-out 0.1s;
+   -o-transition: all 0.2s ease-in-out 0.1s;
+   -ms-transition: all 0.2s ease-in-out 0.1s;
+   transition: all 0.2s ease-in-out 0.1s;
+}
+.view-eighth .des-mask {
+
+   -webkit-transform: translateY(-200px);
+   -moz-transform: translateY(-200px);
+   -o-transform: translateY(-200px);
+   -ms-transform: translateY(-200px);
+   transform: translateY(-200px);
+   -webkit-transition: all 0.2s ease-in-out 0.2s;
+   -moz-transition: all 0.2s ease-in-out 0.2s;
+   -o-transition: all 0.2s ease-in-out 0.2s;
+   -ms-transition: all 0.2s ease-in-out 0.2s;
+   transition: all 0.2s ease-in-out 0.2s;
+}
+.view-eighth a.info {
+   -webkit-transform: translateY(-200px);
+   -moz-transform: translateY(-200px);
+   -o-transform: translateY(-200px);
+   -ms-transform: translateY(-200px);
+   transform: translateY(-200px);
+   -webkit-transition: all 0.2s ease-in-out 0.3s;
+   -moz-transition: all 0.2s ease-in-out 0.3s;
+   -o-transition: all 0.2s ease-in-out 0.3s;
+   -ms-transition: all 0.2s ease-in-out 0.3s;
+   transition: all 0.2s ease-in-out 0.3s;
+}
+
+.view-eighth .itaddtocart-area {
+   -webkit-transform: translateY(-200px);
+   -moz-transform: translateY(-200px);
+   -o-transform: translateY(-200px);
+   -ms-transform: translateY(-200px);
+   transform: translateY(-200px);
+   -webkit-transition: all 0.2s ease-in-out 0.3s;
+   -moz-transition: all 0.2s ease-in-out 0.3s;
+   -o-transition: all 0.2s ease-in-out 0.3s;
+   -ms-transition: all 0.2s ease-in-out 0.3s;
+   transition: all 0.2s ease-in-out 0.3s;
+}
+
+
+.view-eighth:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   top: 0px;
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   -o-transition-delay: 0s;
+   -ms-transition-delay: 0s;
+   transition-delay: 0s;
+   -webkit-animation: bounceY 0.9s linear;
+   -moz-animation: bounceY 0.9s linear;
+   -ms-animation: bounceY 0.9s linear;
+   animation: bounceY 0.9s linear;
+}
+.view-eighth:hover .header-mask {
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.4s;
+   -moz-transition-delay: 0.4s;
+   -o-transition-delay: 0.4s;
+   -ms-transition-delay: 0.4s;
+   transition-delay: 0.4s;
+}
+.view-eighth:hover .des-mask {
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+.view-eighth:hover a.info {
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   -o-transition-delay: 0s;
+   -ms-transition-delay: 0s;
+   transition-delay: 0s;
+}
+
+.view-eighth:hover .itaddtocart-area {
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   -o-transition-delay: 0s;
+   -ms-transition-delay: 0s;
+   transition-delay: 0s;
+}
+
+@keyframes bounceY {
+    0% { transform: translateY(-205px);}
+    40% { transform: translateY(-100px);}
+    65% { transform: translateY(-52px);}
+    82% { transform: translateY(-25px);}
+    92% { transform: translateY(-12px);}
+    55%, 75%, 87%, 97%, 100% { transform: translateY(0px);}
+}
+@-moz-keyframes bounceY {
+    0% { -moz-transform: translateY(-205px);}
+    40% { -moz-transform: translateY(-100px);}
+    65% { -moz-transform: translateY(-52px);}
+    82% { -moz-transform: translateY(-25px);}
+    92% { -moz-transform: translateY(-12px);}
+    55%, 75%, 87%, 97%, 100% { -moz-transform: translateY(0px);}
+}
+@-webkit-keyframes bounceY {
+    0% { -webkit-transform: translateY(-205px);}
+    40% { -webkit-transform: translateY(-100px);}
+    65% { -webkit-transform: translateY(-52px);}
+    82% { -webkit-transform: translateY(-25px);}
+    92% { -webkit-transform: translateY(-12px);}
+    55%, 75%, 87%, 97%, 100% { -webkit-transform: translateY(0px);}
+}
+
+
+.view-seventh img {
+   -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   -ms-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+.view-seventh .mask {
+   background-color: rgba(253,96,96,0.8);
+   -webkit-transform: rotate(0deg) scale(1);
+   -moz-transform: rotate(0deg) scale(1);
+   -o-transform: rotate(0deg) scale(1);
+   -ms-transform: rotate(0deg) scale(1);
+   transform: rotate(0deg) scale(1);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   -ms-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+}
+.view-seventh .header-mask {
+   -webkit-transform: translateY(-200px);
+   -moz-transform: translateY(-200px);
+   -o-transform: translateY(-200px);
+   -ms-transform: translateY(-200px);
+   transform: translateY(-200px);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.view-seventh .des-mask {
+   -webkit-transform: translateY(-200px);
+   -moz-transform: translateY(-200px);
+   -o-transform: translateY(-200px);
+   -ms-transform: translateY(-200px);
+   transform: translateY(-200px);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.view-seventh a.info {
+   -webkit-transform: translateY(-200px);
+   -moz-transform: translateY(-200px);
+   -o-transform: translateY(-200px);
+   -ms-transform: translateY(-200px);
+   transform: translateY(-200px);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+
+.view-seventh .itaddtocart-area {
+   -webkit-transform: translateY(-200px);
+   -moz-transform: translateY(-200px);
+   -o-transform: translateY(-200px);
+   -ms-transform: translateY(-200px);
+   transform: translateY(-200px);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+
+.view-seventh:hover img {
+   -webkit-transform: rotate(720deg) scale(0);
+   -moz-transform: rotate(720deg) scale(0);
+   -o-transform: rotate(720deg) scale(0);
+   -ms-transform: rotate(720deg) scale(0);
+   transform: rotate(720deg) scale(0);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+}
+.view-seventh:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: translateY(0px) rotate(0deg);
+   -moz-transform: translateY(0px) rotate(0deg);
+   -o-transform: translateY(0px) rotate(0deg);
+   -ms-transform: translateY(0px) rotate(0deg);
+   transform: translateY(0px) rotate(0deg);
+   -webkit-transition-delay: 0.4s;
+   -moz-transition-delay: 0.4s;
+   -o-transition-delay: 0.4s;
+   -ms-transition-delay: 0.4s;
+   transition-delay: 0.4s;
+}
+.view-seventh:hover .header-mask {
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.7s;
+   -moz-transition-delay: 0.7s;
+   -o-transition-delay: 0.7s;
+   -ms-transition-delay: 0.7s;
+   transition-delay: 0.7s;
+}
+.view-seventh:hover .des-mask {
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.6s;
+   -moz-transition-delay: 0.6s;
+   -o-transition-delay: 0.6s;
+   -ms-transition-delay: 0.6s;
+   transition-delay: 0.6s;
+}
+.view-seventh:hover a.info {
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.5s;
+   -moz-transition-delay: 0.5s;
+   -o-transition-delay: 0.5s;
+   -ms-transition-delay: 0.5s;
+   transition-delay: 0.5s;
+}
+
+.view-seventh:hover .itaddtocart-area{
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.5s;
+   -moz-transition-delay: 0.5s;
+   -o-transition-delay: 0.5s;
+   -ms-transition-delay: 0.5s;
+   transition-delay: 0.5s;
+}
+
+
+
+.view-sixth img {
+   -webkit-transition: all 0.4s ease-in-out 0.5s;
+   -moz-transition: all 0.4s ease-in-out 0.5s;
+   -o-transition: all 0.4s ease-in-out 0.5s;
+   -ms-transition: all 0.4s ease-in-out 0.5s;
+   transition: all 0.4s ease-in-out 0.5s;
+}
+.view-sixth .mask {
+   background-color: rgba(253,96,96,0.8);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.3s ease-in 0.4s;
+   -moz-transition: all 0.3s ease-in 0.4s;
+   -o-transition: all 0.3s ease-in 0.4s;
+   -ms-transition: all 0.3s ease-in 0.4s;
+   transition: all 0.3s ease-in 0.4s;
+}
+.view-sixth .header-mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+   background: transparent;
+   margin: 20px 40px 0px 40px;
+   -webkit-transform: scale(10);
+   -moz-transform: scale(10);
+   -o-transform: scale(10);
+   -ms-transform: scale(10);
+   transform: scale(10);
+   -webkit-transition: all 0.3s ease-in-out 0.1s;
+   -moz-transition: all 0.3s ease-in-out 0.1s;
+   -o-transition: all 0.3s ease-in-out 0.1s;
+   -ms-transition: all 0.3s ease-in-out 0.1s;
+   transition: all 0.3s ease-in-out 0.1s;
+}
+.view-sixth .des-mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: scale(10);
+   -moz-transform: scale(10);
+   -o-transform: scale(10);
+   -ms-transform: scale(10);
+   transform: scale(10);
+   -webkit-transition: all 0.3s ease-in-out 0.2s;
+   -moz-transition: all 0.3s ease-in-out 0.2s;
+   -o-transition: all 0.3s ease-in-out 0.2s;
+   -ms-transition: all 0.3s ease-in-out 0.2s;
+   transition: all 0.3s ease-in-out 0.2s;
+}
+.view-sixth a.info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: translateY(100px);
+   -moz-transform: translateY(100px);
+   -o-transform: translateY(100px);
+   -ms-transform: translateY(100px);
+   transform: translateY(100px);
+   -webkit-transition: all 0.3s ease-in-out 0.1s;
+   -moz-transition: all 0.3s ease-in-out 0.1s;
+   -o-transition: all 0.3s ease-in-out 0.1s;
+   -ms-transition: all 0.3s ease-in-out 0.1s;
+   transition: all 0.3s ease-in-out 0.1s;
+}
+
+.view-sixth .itaddtocart-area {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: translateY(100px);
+   -moz-transform: translateY(100px);
+   -o-transform: translateY(100px);
+   -ms-transform: translateY(100px);
+   transform: translateY(100px);
+   -webkit-transition: all 0.3s ease-in-out 0.1s;
+   -moz-transition: all 0.3s ease-in-out 0.1s;
+   -o-transition: all 0.3s ease-in-out 0.1s;
+   -ms-transition: all 0.3s ease-in-out 0.1s;
+   transition: all 0.3s ease-in-out 0.1s;
+}
+
+
+.view-sixth:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   -o-transition-delay: 0s;
+   -ms-transition-delay: 0s;
+   transition-delay: 0s;
+}
+.view-sixth:hover img {
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   -o-transition-delay: 0s;
+   -ms-transition-delay: 0s;
+   transition-delay: 0s;
+}
+.view-sixth:hover .header-mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition-delay: 0.1s;
+   -moz-transition-delay: 0.1s;
+   -o-transition-delay: 0.1s;
+   -ms-transition-delay: 0.1s;
+   transition-delay: 0.1s;
+}
+.view-sixth:hover .des-mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+.view-sixth:hover a.info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.3s;
+   -moz-transition-delay: 0.3s;
+   -o-transition-delay: 0.3s;
+   -ms-transition-delay: 0.3s;
+   transition-delay: 0.3s;
+}
+
+.view-sixth:hover .itaddtocart-area {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.3s;
+   -moz-transition-delay: 0.3s;
+   -o-transition-delay: 0.3s;
+   -ms-transition-delay: 0.3s;
+   transition-delay: 0.3s;
+}
+
+
+
+.view-fifth img {
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+.view-fifth .mask {
+   background-color: rgba(253,96,96,0.8);
+   -webkit-transform: translateX(-300px);
+   -moz-transform: translateX(-300px);
+   -o-transform: translateX(-300px);
+   -ms-transform: translateX(-300px);
+   transform: translateX(-300px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+.view-fifth .header-mask {
+   background: rgba(255, 255, 255, 0.5);
+   color: #000;
+   -webkit-box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+   -moz-box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+   box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+}
+.view-fifth .des-mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+
+   -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -ms-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+.view-fifth:hover .mask {
+   -webkit-transform: translateX(0px);
+   -moz-transform: translateX(0px);
+   -o-transform: translateX(0px);
+   -ms-transform: translateX(0px);
+   transform: translateX(0px);
+}
+.view-fifth:hover img {
+   -webkit-transform: translateX(300px);
+   -moz-transform: translateX(300px);
+   -o-transform: translateX(300px);
+   -ms-transform: translateX(300px);
+   transform: translateX(300px);
+}
+.view-fifth:hover .des-mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+
+
+
+
+.view-fourth img {
+   -webkit-transition: all 0.4s ease-in-out 0.2s;
+   -moz-transition: all 0.4s ease-in-out 0.2s;
+   -o-transition: all 0.4s ease-in-out 0.2s;
+   -ms-transition: all 0.4s ease-in-out 0.2s;
+   transition: all 0.4s ease-in-out 0.2s;
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+.view-fourth .mask {
+   background-color: rgba(253,96,96,0.8);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: scale(0) rotate(-180deg);
+   -moz-transform: scale(0) rotate(-180deg);
+   -o-transform: scale(0) rotate(-180deg);
+   -ms-transform: scale(0) rotate(-180deg);
+   transform: scale(0) rotate(-180deg);
+   -webkit-transition: all 0.4s ease-in;
+   -moz-transition: all 0.4s ease-in;
+   -o-transition: all 0.4s ease-in;
+   -ms-transition: all 0.4s ease-in;
+   transition: all 0.4s ease-in;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+}
+.view-fourth .header-mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+   background: transparent;
+   margin: 20px 40px 0px 40px;
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   -ms-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+.view-fourth .des-mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   -ms-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+.view-fourth a.info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   -ms-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+.view-fourth .itaddtocart-area{
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   -ms-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+.view-fourth:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: scale(1) rotate(0deg);
+   -moz-transform: scale(1) rotate(0deg);
+   -o-transform: scale(1) rotate(0deg);
+   -ms-transform: scale(1) rotate(0deg);
+   transform: scale(1) rotate(0deg);
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+.view-fourth:hover img {
+   -webkit-transform: scale(0);
+   -moz-transform: scale(0);
+   -o-transform: scale(0);
+   -ms-transform: scale(0);
+   transform: scale(0);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   -o-transition-delay: 0s;
+   -ms-transition-delay: 0s;
+   transition-delay: 0s;
+}
+.view-fourth:hover .header-mask,
+.view-fourth:hover .des-mask,
+.view-fourth:hover a.info,
+.view-fourth:hover .itaddtocart-area{
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transition-delay: 0.5s;
+   -moz-transition-delay: 0.5s;
+   -o-transition-delay: 0.5s;
+   -ms-transition-delay: 0.5s;
+   transition-delay: 0.5s;
+}
+		
+
+
+
+
+.cattag {
+    background: none repeat scroll 0 0 #AECBEE;
+    border-radius: 8px 8px 0 8px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 7px;
+    margin-right: 6px !important;
+    margin-top: 1px;
+    padding: 0 5px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    width: auto;
+ 	 
+     /*
+    background: none repeat scroll 0 0 #E5E5E5;
+        float: left;
+    font-size: 0.9em;
+    list-style: none outside none;
+    margin-right: 2px;
+    padding: 0 6px;
+    position: relative;
+    width: inherit;
+       display: inline-block;
+       outline: 0 none;
+       border: 0 none;	
+        margin : 10px;
+        
+       
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: -moz-use-text-color;
+    border-image: none;
+    border-radius: 15px 15px 15px 15px;
+    border-style: none solid;
+    border-width: medium 1px 1px;
+    box-shadow: 0 1px 1px #000000 inset;
+    color: #FFFFFF;
+    display: inline-block;
+    list-style: none outside none;
+    margin-bottom: 5px;
+    padding: 2px 8px;
+    width: auto;
+    margin-right: 2px;*/
+
+        
+}
+
+hr.style-five { 
+	border: 0; 
+	height: 0; /* Firefox... */ 
+	box-shadow: 0 0 0.3px 0.4px rgba(0, 0, 0, 0.1);
+	margin : 5px ;
+}
+	
+hr.style-five:after {
+	content: "\00a0";  	  
+}

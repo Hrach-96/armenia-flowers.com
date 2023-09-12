@@ -1,0 +1,983 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+ 
+
+// --------------------------------------------------
+// CORE TYPOGRAPHY (type.less)
+// Headings
+// --------------------------------------------------
+
+.highlights {
+  background: @global2;
+  color: #fff;
+  padding-left: 6px;
+  padding-right: 6px;
+  display: inline-block;
+  padding-bottom: 1px;
+}
+body #jc h4 { border:none;color:@textColor;font-weight: normal;}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color:@textColor2;
+  }
+  i {
+    font-weight: 400;
+  }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+h1,.h1 , h1.sppb-addon-title {
+  line-height: 1.2em;
+  margin: 0 0 40px 0;
+  padding: 0 0 0 0;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  font-size: 50px;
+  @media(max-width: 1199px){
+    font-size: 40px;
+    margin: 0 0 30px 0;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    font-size: 30px;
+    margin: 0 0 20px 0;
+  }
+}
+h2, .h2 , h2.sppb-addon-title {
+  line-height: 1.2em;
+  margin: 0 0 30px 0;
+  padding: 0 0 0 0;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  font-size: 40px;
+  @media(max-width: 1199px){
+    font-size: 30px;
+    margin: 0 0 30px 0;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    font-size: 22px;
+    margin: 0 0 30px 0; 
+  }
+}
+h3, .h3, h3.sppb-addon-title {
+  line-height: 1.2em;
+  margin: 0 0 25px 0;
+  padding: 0 0 0 0;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  font-size: 30px;
+  @media(max-width: 1200px){
+    font-size: 24px;
+    margin: 0 0 20px 0;
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+  }
+
+}
+h4, .h4 , h4.sppb-addon-title {
+  line-height: 1.2em;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 0;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  font-size: 24px;
+  @media (max-width: 991px){
+    font-size: 20px;
+    margin: 0 0 10px 0;
+  }
+}
+h5, .h5 , h5.sppb-addon-title{
+  line-height: 1.2em;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 0;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  font-size: 20px;
+  @media(max-width: 991px){
+    font-size: 18px;
+    margin: 0 0 10px 0;
+  }
+}
+h6, .h6 , h6.sppb-addon-title {
+  line-height: 1.2em;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 0;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  font-size: 18px;
+  @media(max-width: 991px){
+  } 
+}
+h1, .h1{
+  color: @textColor;
+
+}
+h2, .h2{
+  color: @textColor;
+
+}
+h3, .h3{
+  color: @textColor;
+
+}
+h4, .h4{
+  color: @textColor;
+
+}
+h5, .h5{
+  color: @textColor;
+
+}
+h6, .h6{
+  color: @textColor;
+
+}
+.sppb-text-center {
+  text-align: center;
+}
+.sppb-text-left {
+  text-align: left;
+}
+.sppb-text-right {
+  text-align: right;
+}
+// Body text
+// -------------------------
+.green {
+  color: #1abc9c;
+}
+.red {
+  color: #ec7163;
+}
+.blue {
+  color: #c159db;
+}
+.yellow {
+  color: #ee9260;
+}
+// Paragraphs
+// ----------
+p {
+  margin: 0 0 20px;
+}
+.featured {
+  position: relative;
+  z-index: 1;
+}
+ul {
+  margin-top: 20px;
+  padding-left:16px;
+  li {
+    font-size: 16px;
+    line-height: 36px;
+    a {
+      color: #000;
+      &:hover {
+        color: @global;
+      }
+    }
+  }
+}
+// --------------------------------------------------
+// CORE TYPOGRAPHY (type.less)
+// buttons
+// --------------------------------------------------
+button {
+  outline: none;
+
+}
+.btn.jmodedit {
+  color: #000!important;
+  padding:4px;
+  line-height: 20px;
+  text-align: center;
+  &:after {
+     content: "\ebf7";
+      font-family: "Linearicons";
+      display: inline-block;
+      color: #000!important;
+      font-size: 16px;
+  }
+  a , span {
+    color: #000!important;
+  }
+}
+.btn , .sppb-btn{
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: capitalize;
+  padding:9px 30px;
+  border: 1px solid transparent;
+  text-align: center;
+  background: @btnbg;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: pointer;
+  .box-shadow(0 1px 2px rgba(0,0,0,0.2)); 
+  .border-radius(@borderRadius);
+    .animation();
+    @media (min-width: 320px) and (max-width: 767px) {
+       padding:9px 20px;
+    }
+
+  i {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  &:hover,&:focus {
+    background: @btnbgAct;
+    border: 1px solid transparent;
+    color: @btncolorAct;
+  }
+  &.sppb-btn-default , &.btn-default {
+    background: @btnbg;
+    color: @btncolor;
+    &:hover,&:focus {
+      background: @btnbgAct;
+      color: @btncolorAct;
+    }
+  }
+  &.sppb-btn-primary , &.btn-primary {
+    background: #c159db;
+    &:hover,&:focus {
+      background: darken(#c159db,10%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-secondary, &.btn-secondary {
+    background: #85888B;
+    &:hover,&:focus {
+     background: darken(#85888B,10%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-success, &.btn-success {
+    background: #1abc9c;
+    &:hover,&:focus {
+      background: darken(#1abc9c,10%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-info, &.btn-info {
+    background: #5cc2ed;
+   &:hover,&:focus {
+      background: darken(#5cc2ed,10%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-warning, &.btn-warning {
+    background: #ec7163;
+    &:hover,&:focus {
+      background: darken(#ec7163,10%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-danger, &.btn-danger {
+    background: #ffa371;
+    &:hover,&:focus {
+      background: darken(#ffa371,10%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-dark, &.btn-dark {
+    background: #2e3131;
+    &:hover,&:focus {
+      background: darken(#2e3131,10%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-link, &.btn-link {
+    background: none;
+    color: @btnbg;
+    border: 1px solid transparent!important;
+    padding: 0px!important;
+    &:hover {
+      color: @textColor;
+    }
+  }
+  &.sppb-btn-lg , &.btn-lg , &.sppb-btn-3d.sppb-btn-lg , &.sppb-btn-3d.btn-lg {
+    padding:12px 30px;
+    @media (min-width: 320px) and (max-width: 767px) {
+      padding:12px 20px;
+    }
+  }
+  &.sppb-btn-xlg, &.btn-xlg , &.sppb-btn-3d.sppb-btn-xlg , &.sppb-btn-3d.btn-xlg {
+    padding: 14px 30px;
+    font-size: 16px;
+    @media (min-width: 320px) and (max-width: 767px) {
+      padding:14px 20px;
+      font-size: 15px;
+    }
+  }
+  &.sppb-btn-sm, &.btn-sm , &.sppb-btn-3d.sppb-btn-sm , &.sppb-btn-3d.btn-sm {
+    padding:7px 28px;
+    font-size: 12px;
+    @media (min-width: 320px) and (max-width: 767px) {
+      padding:7px 20px;
+    }
+  }
+  &.sppb-btn-xs, &.btn-xs , &.sppb-btn-3d.sppb-btn-xs , &.sppb-btn-3d.btn-xs {
+    padding:6px 22px;
+    font-size: 12px;
+    @media (min-width: 320px) and (max-width: 767px) {
+      padding:6px 16px;
+    }
+  }
+  &.sppb-btn-rounded , &.btn-rounded {
+    .border-radius(4px);
+  }
+ &.sppb-btn-round , &.btn-round {
+    .border-radius(50px);
+
+  }
+  &.sppb-btn-square, &.btn-square {
+    .border-radius(0px);
+  }
+}
+.sppb-btn.sppb-btn-link {
+  box-shadow: none!important;
+}
+.sppb-btn.sppb-btn-outline, .btn.btn-outline {
+  //padding:15px 30px;
+  background: none;
+  box-shadow: none!important;
+
+  &:hover {
+    background: none;
+  }
+  &.sppb-btn-default , &.btn-default {
+    border-color: @btnbg;
+    color: @btnbg;
+    background: none;
+    &:hover {
+      border-color:@btnbg;
+      background: lighten(@btnbg,10%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-primary , &.btn-primary {
+    border-color: #c159db;
+    color: #c159db;
+    background: none;
+    &:hover {
+      border-color:#c159db;
+      background: lighten(#c159db,10%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-secondary, &.btn-secondary {
+    border-color: #85888B;
+    color: #85888B;
+    background: none;
+    &:hover {
+      border-color:#85888B;
+      background: lighten(#85888B,10%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-success, &.btn-success {
+    border-color: #1abc9c;
+    color: #1abc9c;
+    background: none;
+    &:hover {
+      border-color:#1abc9c;
+      background: lighten(#1abc9c,10%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-info, &.btn-info {
+    border-color: #5cc2ed;
+    color: #5cc2ed;
+    background: none;
+    &:hover {
+       border-color:#5cc2ed;
+      background: lighten(#5cc2ed,10%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-warning, &.btn-warning {
+    border-color: #ec7163;
+    color: #ec7163;
+    background: none;
+    &:hover {
+       border-color:#ec7163;
+      background: lighten(#ec7163,10%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-danger, &.btn-danger {
+    border-color: #ffa371;
+    color: #ffa371;
+    background: none;
+    &:hover {
+      border-color:#ffa371;
+      background: lighten(#ffa371,10%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-dark, &.btn-dark {
+    border-color: #2e3131;
+    color: #2e3131;
+    background: none;
+    &:hover {
+      border-color: #2e3131;
+      background: lighten(#2e3131,10%);
+      color: #fff;
+    }
+  }
+}
+
+.sppb-btn.sppb-btn-gradient, .btn.btn-gradient {
+  //padding:15px 30px;
+  background: none;
+  border: 1px solid transparent;
+  &:hover {
+    background: none;
+    border: 1px solid transparent;
+  }
+   &.sppb-btn-default , &.btn-default {
+    //background: #f0f0f0;
+    color: @btncolor;
+    //@include gradient-x(#f0f0f0,rgba(#f0f0f0,0.7),0%,100%); 
+    border: 1px solid @btnbg;
+    .gradient-vertical(@btnbg, fade(@btnbg,70%), fade(@btnbg,50%));
+    &:hover {
+      .gradient-vertical(fade(@btnbg,30%), fade(@btnbg,70%), @btnbg);
+      border: 1px solid fade(@btnbg,70%);
+    }
+  }
+  &.sppb-btn-primary , &.btn-primary {
+    //background: @global;
+    border: 1px solid #c159db;
+    .gradient-vertical(#c159db, fade(#c159db,70%), fade(#c159db,50%));
+    &:hover {
+      .gradient-vertical(fade(#c159db,30%), fade(#c159db,70%), #c159db);
+      border: 1px solid fade(#c159db,0.7);
+    }
+  }
+  &.sppb-btn-secondary, &.btn-secondary {
+    //background: #aaafb3;
+    border: 1px solid #85888B;
+    .gradient-vertical(#85888B, fade(#85888B,70%), fade(#85888B,50%));
+    &:hover {
+      .gradient-vertical(fade(#85888B,30%), fade(#85888B,70%), #85888B);
+      border: 1px solid fade(#85888B,0.7);
+    }
+  }
+  &.sppb-btn-success, &.btn-success {
+    //background: #17a98c;
+    border: 1px solid #1abc9c;
+    .gradient-vertical(#1abc9c, fade(#1abc9c,70%), fade(#1abc9c,50%));
+    &:hover {
+      .gradient-vertical(fade(#1abc9c,30%), fade(#1abc9c,70%), #1abc9c);
+      border: 1px solid fade(#1abc9c,0.7);
+    }
+  }
+  &.sppb-btn-info, &.btn-info {
+    //background: #85b74e;
+    border: 1px solid #5cc2ed;
+    .gradient-vertical(#5cc2ed, fade(#5cc2ed,70%), fade(#5cc2ed,50%));
+    &:hover {
+      .gradient-vertical(fade(#5cc2ed,30%), fade(#5cc2ed,70%), #5cc2ed);
+      border: 1px solid fade(#5cc2ed,0.7);
+    }
+  }
+  &.sppb-btn-warning, &.btn-warning {
+    //background: #cf4436;
+    border: 1px solid #ec7163;
+    .gradient-vertical(#ec7163, fade(#ec7163,70%), fade(#ec7163,50%));
+    &:hover {
+      .gradient-vertical(fade(#ec7163,30%), fade(#ec7163,70%), #ec7163);
+      border: 1px solid fade(#ec7163,0.7);
+    }
+  }
+  &.sppb-btn-danger, &.btn-danger {
+    //background: #e9b13f;
+    border: 1px solid #ffa371;
+    .gradient-vertical(#ffa371, fade(#ffa371,70%), fade(#ffa371,50%));
+    &:hover {
+      .gradient-vertical(fade(#ffa371,30%), fade(#ffa371,70%), #ffa371);
+      border: 1px solid fade(#ffa371,0.7);
+    }
+  }
+  &.sppb-btn-dark, &.btn-dark {
+    //background: #2a3a4b;
+    border: 1px solid #2e3131;
+    .gradient-vertical(#2e3131, fade(#2e3131,70%), fade(#2e3131,50%));
+    &:hover {
+      .gradient-vertical(fade(#2e3131,30%), fade(#2e3131,70%), #2e31311);
+      border: 1px solid fade(#2e3131,0.7);
+    }
+  }
+}
+
+&.sppb-btn.sppb-btn-3d, &.btn.btn-3d {
+ padding:12px 30px;
+  border-bottom-width:3px !important;
+  border-color: @btnbg;
+  border-bottom-color: darken(@btnbg,5%);
+  &:hover {
+    border: 1px solid @btnbgAct!important;
+    border-bottom:3px solid @btnbgAct!important;
+    background: @btnbgAct;
+    color: @btncolorAct;
+  }
+  &.sppb-btn-primary , &.btn-primary {
+    border-color:#c159db;
+    border-bottom-color: darken(#c159db, 5%);
+    color: #fff;
+    &:hover {
+      border: 1px solid transparent!important;
+      border-bottom:3px solid transparent!important;
+      background: darken(#c159db,5%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-secondary, &.btn-secondary {
+    border-color:#85888B;
+    border-bottom-color: darken(#85888B, 5%);
+    color: #fff;
+    &:hover {
+      border: 1px solid #85888B!important;
+      border-bottom:3px solid #85888B!important;
+      background: darken(#85888B,5%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-success, &.btn-success {
+    border-color:#1abc9c;
+    border-bottom-color: darken(#1abc9c, 5%);
+    color: #fff;
+    &:hover {
+      border: 1px solid #1abc9c!important;
+      border-bottom:3px solid #1abc9c!important;
+      background: darken(#1abc9c,5%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-info, &.btn-info {
+    border-color:#5cc2ed;
+    border-bottom-color: darken(#5cc2ed, 5%);
+    color: #fff;
+    &:hover {
+     border: 1px solid #5cc2ed!important;
+      border-bottom:3px solid #5cc2ed!important;
+      background: darken(#5cc2ed,5%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-warning, &.btn-warning {
+    border-color:#ec7163;
+    border-bottom-color: darken(#ec7163, 5%);
+    color: #fff;
+    &:hover {
+      border: 1px solid #ec7163!important;
+      border-bottom:3px solid #ec7163!important;
+      background: darken(#ec7163,5%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-danger, &.btn-danger {
+    border-color:#ffa371;
+    border-bottom-color: darken(#ffa371, 5%);
+    color: #fff;
+    &:hover {
+     border: 1px solid #ffa371!important;
+      border-bottom:3px solid #ffa371!important;
+      background: darken(#ffa371,5%);
+      color: #fff;
+    }
+  }
+  &.sppb-btn-dark, &.btn-dark {
+    border-color:#2e3131;
+    border-bottom-color: darken(#2e3131, 5%);
+    color: #fff;
+    &:hover {
+      border: 1px solid #2e3131!important;
+      border-bottom:3px solid #2e3131!important;
+      background: darken(#2e3131,5%);
+      color: #fff;
+    }
+  }
+}
+
+
+// Body text
+// -------------------------
+
+// Paragraphs
+// ----------
+p {
+  margin: 0 0 (@line-height-computed / 2);
+}
+
+.lead {
+  margin-bottom: @line-height-computed;
+  font-size: floor((@font-size-base * 1.15));
+  font-weight: 200;
+  line-height: 1.4;
+
+  @media (min-width: @screen-sm-min) {
+    font-size: (@font-size-base * 1.5);
+  }
+}
+
+
+// Emphasis & misc
+// ---------------
+
+// Ex: 14px base font * 85% = about 12px
+small, .small   { font-size: 85%; }
+
+// Undo browser default styling
+cite    { font-style: normal; }
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+
+// Contextual colors
+.text-muted {
+  color: @text-muted;
+}
+.text-primary {
+  .text-emphasis-variant(@brand-primary);
+}
+.text-success {
+  .text-emphasis-variant(@state-success-text);
+}
+.text-info {
+  .text-emphasis-variant(@state-info-text);
+}
+.text-warning {
+  .text-emphasis-variant(@state-warning-text);
+}
+.text-danger {
+  .text-emphasis-variant(@state-danger-text);
+}
+
+// Contextual backgrounds
+// For now we'll leave these alongside the text classes until v4 when we can
+// safely shift things around (per SemVer rules).
+.bg-primary {
+  // Given the contrast here, this is the only class to have its color inverted
+  // automatically.
+  color: #fff;
+  .bg-variant(@brand-primary);
+}
+.bg-success {
+  .bg-variant(@state-success-bg);
+}
+.bg-info {
+  .bg-variant(@state-info-bg);
+}
+.bg-warning {
+  .bg-variant(@state-warning-bg);
+}
+.bg-danger {
+  .bg-variant(@state-danger-bg);
+}
+
+// Highlight
+.highlight {
+  background-color: #FFC;
+  font-weight: bold;
+  padding: 1px 4px;
+}
+
+// Page header
+// -------------------------
+
+.page-header {
+  padding-bottom: ((@line-height-computed / 2) - 1);
+  margin: (@line-height-computed * 2) 0 @line-height-computed;
+  border-bottom: 1px solid @page-header-border-color;
+}
+
+
+// Lists
+// --------------------------------------------------
+
+// Unordered and Ordered lists
+// ----------------------------
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: (@line-height-computed / 2);
+  ul,
+  ol{
+    margin-bottom: 0;
+  }
+}
+
+// List options
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  .list-unstyled();
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+// Description Lists
+dl {
+  margin-top: 0; // Remove browser default
+  margin-bottom: @line-height-computed;
+}
+
+dt,
+dd {
+  line-height: @line-height-base;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0; // Undo browser default
+}
+
+// Horizontal description lists
+//
+// Defaults to being stacked without any of the below styles applied, until the
+// grid breakpoint is reached (default of ~768px).
+
+@media (min-width: @grid-float-breakpoint) {
+  .dl-horizontal {
+    dt {
+      float: left;
+      width: (@component-offset-horizontal - 20);
+      clear: left;
+      text-align: right;
+      .text-overflow();
+    }
+    dd {
+      margin-left: @component-offset-horizontal;
+      &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present
+    }
+  }
+}
+
+
+
+//
+// MISC
+// --------------------------------------------------
+
+// Abbreviations and acronyms
+// --------------------------
+abbr[title],
+// Added data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted @abbr-border-color;
+}
+.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+
+// Blockquotes
+// -----------
+blockquote {
+  padding: (@line-height-computed / 2) @line-height-computed;
+  margin: 0 0 @line-height-computed;
+  font-size: @blockquote-font-size;
+  border-left: 5px solid @blockquote-border-color;
+
+  p,
+  ul,
+  ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Note: Deprecated small and .small as of v3.1.0
+  // Context: https://github.com/twbs/bootstrap/issues/11660
+  footer,
+  small,
+  .small {
+    display: block;
+    font-size: 80%; // back to default font-size
+    line-height: @line-height-base;
+    color: @blockquote-small-color;
+
+    &:before {
+      content: '\2014 \00A0'; // em dash, nbsp
+    }
+  }
+}
+
+// Opposite alignment of blockquote
+//
+// Heads up: `blockquote.pull-right` has been deprecated as of v3.1.0.
+.blockquote-reverse,
+blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid @blockquote-border-color;
+  border-left: 0;
+  text-align: right;
+
+  // Account for citation
+  footer,
+  small,
+  .small {
+    &:before { content: ''; }
+    &:after {
+      content: '\00A0 \2014'; // nbsp, em dash
+    }
+  }
+}
+
+// Quotes
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+// Addresses
+// ---------
+address {
+  margin-bottom: @line-height-computed;
+  font-style: normal;
+  line-height: @line-height-base;
+}
+
+
+
+//
+// CODE (inline and block) (code.less)
+// -----------------------------------
+// Inline and block code styles
+code,
+kbd,
+pre,
+samp {
+  font-family: @font-family-monospace;
+}
+
+// Inline code
+code {
+}
+
+// Blocks of code
+pre {
+}
+
+
+
+//
+// FEATURE LIST
+// --------------------------------------------------
+.btn-actions {
+  text-align: center;
+}
+
+.features-list {
+  margin-top: @t3-global-margin * 3;
+
+  .page-header {
+    border: 0;
+    text-align: center;
+
+    h1 {
+      font-size: @t3-font-size-bigger + 30;
+    }
+  }
+
+  /* Features Rows */
+  .feature-row {
+    overflow: hidden;
+    min-height: 200px;
+    color: #696f72;
+    border-top: 1px solid #e0e2e3;
+    padding: (@t3-global-padding * 3) 0 0;
+	text-align:center;
+
+    &:last-child {
+      border-bottom: 1px solid #e0e2e3;
+      margin-bottom: @t3-global-margin * 3;
+    }
+
+    h3 {
+      font-size: @font-size-base * 2;      
+    }
+
+    div:first-child {
+      padding-left: 0;
+    }
+
+    div:last-child {
+      padding-right: 0;
+    }
+
+    div:first-child.feature-img img {
+      float: left;
+    }
+
+    div:last-child.feature-img img {
+      float: right;
+    }
+  }
+}
+
+
+.jumbotron {
+  h2 {
+    font-size: @t3-font-size-bigger + 30;
+  }
+
+  iframe {
+    margin-top: @t3-global-margin;
+  }
+}

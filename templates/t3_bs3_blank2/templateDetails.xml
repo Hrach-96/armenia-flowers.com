@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade" client="site">
+	<name>t3_bs3_blank2</name>
+	<version>1.4</version>
+	<description>VER 1.0 joomla 3.6.x</description>
+	<creationDate>08 August 2016</creationDate>
+	<author>Velikorodnov</author>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>http://www.t3-framework.org</authorUrl>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<t3>
+		<base>base-bs3</base>
+	</t3>
+	<description>
+		<![CDATA[
+		<div align="center">
+			<div class="alert alert-success" style="background-color:#DFF0D8;border-color:#D6E9C6;color: #468847;padding: 1px 0;">
+				<a href="http://t3-framework.org/"><img src="http://joomlart.s3.amazonaws.com/images/jat3v3-documents/message-installation/logo.png" alt="some_text" width="300" height="99"></a>
+				<h4><a href="http://t3-framework.org/" title="">Home</a> | <a href="http://demo.t3-framework.org/" title="">Demo</a> | <a href="http://t3-framework.org/documentation" title="">Document</a> | <a href="https://github.com/t3framework/t3/blob/master/CHANGELOG.md" title="">Changelog</a></h4>
+				<p> </p>
+				<span style="color:#FF0000">Note: T3 blank requires T3 plugin to be installed and enabled.</span><p></p>
+				<p>Copyright 2004 - 2013 <a href='http://www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+			</div>
+			<style>table.adminform{width: 100%;}</style>
+		</div>
+		]]>
+	</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>thememagic.xml</filename>
+		<filename>templateInfo.php</filename>
+		<filename>templateHook.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>language</folder>
+		<folder>images</folder>
+		<folder>tpls</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_t3_bs3_blank2.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_t3_bs3_blank2.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_t3_bs3_blank2.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_t3_bs3_blank2.sys.ini</language>
+	</languages>
+
+	<positions>
+		<position>languageswitcherload</position>
+		<position>head-search</position>
+		<position>head-cart</position>
+		<position>mainnav</position>
+		<position>megamenu</position>
+		<position>navhelper</position>
+		<position>breadcrumbs</position>
+		<position>off-canvas</position>
+		<position>sidebar-1</position>
+		<position>sidebar-2</position>
+		<position>mast-col</position>
+		<position>footer</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>footer-0</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>footer-5</position>
+		<position>footer-6</position>
+		<position>footer-7</position>
+		<position>footer-8</position>
+		<position>headlist</position>
+		<position>headlogin</position>
+		<position>headlanguage</position>
+		<position>headcurrency</position>
+		<position>topcall</position>
+		<position>topwishlist</position>
+		<position>topcomparelist</position>
+		<position>slider-wide</position>
+		<position>breadcrumbs</position>
+		<position>cookie</position>
+		<position>debug</position>
+		<position>blog</position>
+		
+	</positions>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/t3/includes/depend">
+
+				<fieldset name="general_params" label="T3_GENERAL_LABEL" description="T3_GENERAL_DESC">
+				<field name="GoogleFonts" type="list" default="Noto Serif"
+				 label="Used GoogleFonts List for Body"
+				 description="">
+					<option value="Noto Serif">Noto Serif</option>
+					<option value="Roboto">Roboto</option>
+					<option value="Lato">Lato</option>
+					<option value="Ubuntu">Ubuntu</option>
+					<option value="Open Sans">Open Sans</option>
+					<option value="Source Sans Pro">Source Sans Pro</option>
+					<option value="Raleway">Raleway</option>
+					<option value="Roboto Slab">Roboto Slab</option>
+					<option value="Droid Serif">Droid Serif</option>
+					<option value="Merriweather">Merriweather</option>
+					<option value="Merriweather Sans">Merriweather Sans</option>
+					<option value="Playfair Display">Playfair Display</option>
+
+				</field>
+				<field name="GoogleFontsH" type="list" default="Noto Serif"
+				 label="Used GoogleFonts List for Headings"
+				 description="">
+					<option value="Noto Serif">Noto Serif</option>
+					<option value="Roboto">Roboto</option>
+					<option value="Lato">Lato</option>
+					<option value="Ubuntu">Ubuntu</option>
+					<option value="Open Sans">Open Sans</option>
+					<option value="Source Sans Pro">Source Sans Pro</option>
+					<option value="Raleway">Raleway</option>
+					<option value="Roboto Slab">Roboto Slab</option>
+					<option value="Droid Serif">Droid Serif</option>
+					<option value="Merriweather">Merriweather</option>
+					<option value="Merriweather Sans">Merriweather Sans</option>
+					<option value="Playfair Display">Playfair Display</option>
+
+				</field>
+				<field name="preloader" type="radio" default="0"
+				 global="1"
+				 label="Used preloader pages"
+				 description="Enabled or disabled preloader pages ">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="preloaderbg" type="text" default="#000000"
+				 global="1"
+				 label="Used background in preloader"
+				 description="background default #000000">
+				</field>
+				<field name="stickynavigation" type="radio" default="0"
+				 global="1"
+				 label="Used sticky navigation"
+				 description="Enabled or disabled sticky navigation ">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field class="btn-group" name="layout" type="radio" default="boxed" label="Used layout boxed or wide" description="">
+					<option value="boxed">boxed</option>
+					<option value="wide">fullwidth</option>
+				</field>
+				<field class="btn-group" name="header" type="radio" default="normal" label="Used Content normal or wide1366" description="">
+					<option value="normal">normal</option>
+					<option value="wide">wider</option>
+				</field>
+				<field name="boxedimage" type="t3media" default=""
+				 label="Boxed image Background"
+				 description=""/>
+
+				<field name="politeloading" type="radio" default="0"
+				 global="1"
+				 label="Used Polite Loading"
+				 description="Enabled or disabled animation polite loading">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="lblsale" type="radio" default="0"
+				 global="1"
+				 label="Used label SALE"
+				 description="Enabled or disabled label SALE ">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="lblhot" type="radio" default="0"
+				 global="1"
+				 label="Used label HOT"
+				 description="Enabled or disabled label HOT ">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="lblhotcount" type="text" default="10"
+				 global="1"
+				 label="Used count label HOT"
+				 description="Count label HOT ">
+				</field>
+				
+				<field name="lbloffer" type="radio" default="0"
+				 global="1"
+				 label="Used label OFFER"
+				 description="Enabled or disabled label OFFER">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="lblsold" type="radio" default="0"
+				 global="1"
+				 label="Used label SOLD"
+				 description="Enabled or disabled label SOLD">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="lblnew" type="radio" default="0"
+				 global="1"
+				 label="Used label NEW"
+				 description="Enabled or disabled label NEW">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="lblnewcount" type="text" default="100"
+				 global="1"
+				 label="Used count days label NEW"
+				 description="Count days label NEW">
+				</field>
+				<field name="showdesc" type="radio" default="0"
+				 global="1"
+				 label="Used Show Description on product"
+				 description="Enabled or disabled description">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="showdesccount" type="text" default="50"
+				 global="1"
+				 label="Used count description"
+				 description="Count description">
+				</field>
+
+				<field name="showcompare" type="radio" default="0"
+				 global="1"
+				 label="Used Show Compare on product"
+				 description="Enabled or disabled compare">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="showwishlist" type="radio" default="0"
+				 global="1"
+				 label="Used Show Wishlist on product"
+				 description="Enabled or disabled wishlist">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="showquick" type="radio" default="0"
+				 global="1"
+				 label="Used Show Quick on product"
+				 description="Enabled or disabled Quick">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field class="btn-group" name="category_layout" type="radio" default="grid_list" label="Used layout grid or list" description="">
+					<option value="grid">grid</option>
+					<option value="list">list</option>
+					<option value="grid_list">grid/list</option>
+					<option value="list_grid">list/grid</option>
+				</field>
+				<field class="btn-group" name="category_list_style" type="radio" default="style_1" label="Used style listing categories" description="">
+					<option value="style_1">style_1</option>
+					<option value="style_2">style_2</option>
+					<option value="style_3">style_3</option>
+				</field>
+				<field name="prodcartbtn" type="radio" default="0"
+				 global="1"
+				 label="Used Sidebar productpage"
+				 description="Enabled or disabled Sidebar productpage">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field class="btn-group" name="productpage_images_style" type="radio" default="style_1" label="Used style additional images productpage in " description="">
+					<option value="style_1">default</option>
+					<option value="style_2">elevateZoom</option>
+					<option value="style_3">lightGallery</option>
+				</field>
+				<field class="btn-group" name="productpage_infoblock_style" type="radio" default="style_1" label="Used style information block in  productpage" description="">
+					<option value="style_1">tabs</option>
+					<option value="style_2">accordion</option>
+					<option value="style_3">block info</option>
+				</field>
+				<field name="socialshare" type="radio" default="0"
+				 global="1"
+				 label="Used Social Share productpage"
+				 description="Enabled or disabled Social Share">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+			
+		</fields>
+	</config>
+</extension>

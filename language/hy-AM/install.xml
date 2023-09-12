@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4.4" client="site" type="language" method="upgrade">
+	<name>Armenian</name>
+	<tag>hy-AM</tag>
+	<version>3.4.4.1</version>
+	<creationDate>2015-09-22</creationDate>
+	<author>Andrey Aleksanyants</author>
+	<authorEmail>aaleksanyants@yahoo.com</authorEmail>
+	<authorUrl>www.aleksanyants.com/armjoomla</authorUrl>
+	<copyright>Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>hy-AM site language</description>
+	<files>
+		<filename>hy-AM.com_ajax.ini</filename>
+		<filename>hy-AM.com_config.ini</filename>
+		<filename>hy-AM.com_contact.ini</filename>
+		<filename>hy-AM.com_content.ini</filename>
+		<filename>hy-AM.com_finder.ini</filename>
+		<filename>hy-AM.com_mailto.ini</filename>
+		<filename>hy-AM.com_media.ini</filename>
+		<filename>hy-AM.com_messages.ini</filename>
+		<filename>hy-AM.com_newsfeeds.ini</filename>
+		<filename>hy-AM.com_search.ini</filename>
+		<filename>hy-AM.com_tags.ini</filename>
+		<filename>hy-AM.com_users.ini</filename>
+		<filename>hy-AM.com_weblinks.ini</filename>
+		<filename>hy-AM.com_wrapper.ini</filename>
+		<filename>hy-AM.files_joomla.sys.ini</filename>
+		<filename>hy-AM.finder_cli.ini</filename>
+		<filename>hy-AM.ini</filename>
+		<filename>hy-AM.lib_fof.sys.ini</filename>
+		<filename>hy-AM.lib_idna_convert.sys.ini</filename>
+		<filename>hy-AM.lib_joomla.ini</filename>
+		<filename>hy-AM.lib_joomla.sys.ini</filename>
+		<filename>hy-AM.lib_phpass.sys.ini</filename>
+		<filename>hy-AM.lib_phputf8.sys.ini</filename>
+		<filename>hy-AM.lib_simplepie.sys.ini</filename>
+		<filename>hy-AM.localise.php</filename>
+		<filename>hy-AM.mod_articles_archive.ini</filename>
+		<filename>hy-AM.mod_articles_archive.sys.ini</filename>
+		<filename>hy-AM.mod_articles_categories.ini</filename>
+		<filename>hy-AM.mod_articles_categories.sys.ini</filename>
+		<filename>hy-AM.mod_articles_category.ini</filename>
+		<filename>hy-AM.mod_articles_category.sys.ini</filename>
+		<filename>hy-AM.mod_articles_latest.ini</filename>
+		<filename>hy-AM.mod_articles_latest.sys.ini</filename>
+		<filename>hy-AM.mod_articles_news.ini</filename>
+		<filename>hy-AM.mod_articles_news.sys.ini</filename>
+		<filename>hy-AM.mod_articles_popular.ini</filename>
+		<filename>hy-AM.mod_articles_popular.sys.ini</filename>
+		<filename>hy-AM.mod_banners.ini</filename>
+		<filename>hy-AM.mod_banners.sys.ini</filename>
+		<filename>hy-AM.mod_breadcrumbs.ini</filename>
+		<filename>hy-AM.mod_breadcrumbs.sys.ini</filename>
+		<filename>hy-AM.mod_custom.ini</filename>
+		<filename>hy-AM.mod_custom.sys.ini</filename>
+		<filename>hy-AM.mod_feed.ini</filename>
+		<filename>hy-AM.mod_feed.sys.ini</filename>
+		<filename>hy-AM.mod_finder.ini</filename>
+		<filename>hy-AM.mod_finder.sys.ini</filename>
+		<filename>hy-AM.mod_footer.ini</filename>
+		<filename>hy-AM.mod_footer.sys.ini</filename>
+		<filename>hy-AM.mod_languages.ini</filename>
+		<filename>hy-AM.mod_languages.sys.ini</filename>
+		<filename>hy-AM.mod_login.ini</filename>
+		<filename>hy-AM.mod_login.sys.ini</filename>
+		<filename>hy-AM.mod_menu.ini</filename>
+		<filename>hy-AM.mod_menu.sys.ini</filename>
+		<filename>hy-AM.mod_random_image.ini</filename>
+		<filename>hy-AM.mod_random_image.sys.ini</filename>
+		<filename>hy-AM.mod_related_items.ini</filename>
+		<filename>hy-AM.mod_related_items.sys.ini</filename>
+		<filename>hy-AM.mod_search.ini</filename>
+		<filename>hy-AM.mod_search.sys.ini</filename>
+		<filename>hy-AM.mod_stats.ini</filename>
+		<filename>hy-AM.mod_stats.sys.ini</filename>
+		<filename>hy-AM.mod_syndicate.ini</filename>
+		<filename>hy-AM.mod_syndicate.sys.ini</filename>
+		<filename>hy-AM.mod_tags_popular.ini</filename>
+		<filename>hy-AM.mod_tags_popular.sys.ini</filename>
+		<filename>hy-AM.mod_tags_similar.ini</filename>
+		<filename>hy-AM.mod_tags_similar.sys.ini</filename>
+		<filename>hy-AM.mod_users_latest.ini</filename>
+		<filename>hy-AM.mod_users_latest.sys.ini</filename>
+		<filename>hy-AM.mod_weblinks.ini</filename>
+		<filename>hy-AM.mod_weblinks.sys.ini</filename>
+		<filename>hy-AM.mod_whosonline.ini</filename>
+		<filename>hy-AM.mod_whosonline.sys.ini</filename>
+		<filename>hy-AM.mod_wrapper.ini</filename>
+		<filename>hy-AM.mod_wrapper.sys.ini</filename>
+		<filename>hy-AM.tpl_beez3.ini</filename>
+		<filename>hy-AM.tpl_beez3.sys.ini</filename>
+		<filename>hy-AM.tpl_protostar.ini</filename>
+		<filename>hy-AM.tpl_protostar.sys.ini</filename>
+		<filename>index.html</filename>
+		<filename file="meta">install.xml</filename>
+		<filename file="meta">hy-AM.xml</filename>
+	</files>
+	<params />
+</extension>

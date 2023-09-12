@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.0.0"  method="upgrade">
+	<name>Comparelist</name> 
+	<creationDate>December 2019</creationDate>
+    <author>olejenya</author>
+    <authorEmail>olejenya-info@gmail.com</authorEmail>
+    <copyright>Copyright (C) 2004-2011 Virtuemart Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>1.0.0</version>
+	<description>Component Compare products</description>
+	<files folder="site">
+	  <folder>helpers</folder> 
+	  <folder>models</folder> 
+	  <folder>views</folder>
+	  <folder>template</folder> 
+	  <filename>index.html</filename> 
+	  <filename>comparelist.php</filename>
+	  <filename>controller.php</filename>
+	   <filename>router.php</filename>
+	</files>
+	 <languages folder="site/language">
+			<language tag="en-GB">en-GB/en-GB.com_comparelist.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_comparelist.ini</language>
+			<language tag="es-ES">es-ES/es-ES.com_comparelist.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_comparelist.ini</language>
+			<language tag="it-IT">it-IT/it-IT.com_comparelist.ini</language>
+	</languages> 
+	<administration>
+		<menu link="index.php?option=com_config&amp;view=component&amp;component=com_comparelist&amp;path=">COM_COMPARE_MENU</menu>
+		<submenu>
+			<menu link="index.php?option=com_config&amp;view=component&amp;component=com_comparelist&amp;path=">COM_COMPARE_MENU</menu>
+        </submenu>
+		<files folder="admin">
+			<filename>admin.comparelist.php</filename>
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+		</files>
+		<languages folder="admin">
+		<language tag="en-GB">language/en-GB/en-GB.com_comparelist.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_comparelist.sys.ini</language>
+		
+		<language tag="de-DE">language/de-DE/de-DE.com_comparelist.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.com_comparelist.sys.ini</language>
+		
+		<language tag="es-ES">language/es-ES/es-ES.com_comparelist.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.com_comparelist.sys.ini</language>
+		
+		<language tag="fr-FR">language/fr-FR/fr-FR.com_comparelist.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.com_comparelist.sys.ini</language>
+		
+		<language tag="it-IT">language/it-IT/it-IT.com_comparelist.ini</language>
+		<language tag="it-IT">language/it-IT/it-IT.com_comparelist.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

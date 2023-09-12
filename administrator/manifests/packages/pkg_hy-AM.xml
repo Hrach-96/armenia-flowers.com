@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="3.4.4" type="package" method="upgrade">
+	<name>Armenian Language Pack</name>
+	<packagename>hy-AM</packagename>
+	<version>3.4.4.1</version>
+	<creationDate>2015-09-22</creationDate>
+	<author>Andrey Aleksanyants</author>
+	<authorEmail>aaleksanyants@yahoo.com</authorEmail>
+	<authorUrl>www.aleksanyants.com/armjoomla</authorUrl>
+	<copyright>Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<url>http://www.aleksanyants.com/armjoomla/</url>
+	<packager>Andrey Aleksanyants</packager>
+	<packagerurl>http://www.aleksanyants.com/armjoomla/</packagerurl>
+	<description>Joomla 3.4.4 Armenian Language Package</description>
+	<files>
+		<file type="language" client="site" id="hy-AM">site_hy-AM.zip</file>
+		<file type="language" client="administrator" id="hy-AM">admin_hy-AM.zip</file>
+	</files>
+	<updateservers>
+		<server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist_3.xml</server>
+	</updateservers>
+</extension>

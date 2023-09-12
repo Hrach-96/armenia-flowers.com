@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets>
+	<preset id="1" type="linear">
+		<gradient_start>
+			<color>#E62D3F</color>
+		</gradient_start>
+		<gradient_end>
+			<color>#900E1B</color>
+		</gradient_end>
+	</preset>
+	<preset id="2" type="glass">
+		<gradient_start>
+			<color>#484848</color>
+			<color>#393939</color>
+		</gradient_start>
+		<gradient_end>
+			<color>#212121</color>
+			<color>#131313</color>
+		</gradient_end>
+	</preset>
+</presets>

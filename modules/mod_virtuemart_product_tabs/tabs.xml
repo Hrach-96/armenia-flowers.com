@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="section1" label="New Tabs for product modules">
+        <field name="vm_tabs_title" type="text" label="Title tabs product" />
+        <field name="vm_tabs_class" type="text" default="itemtabs_1" label="For correct work and customization" />
+		<field name="product_group" type="list" default="featured" class="advancedSelect"
+			label="MOD_VIRTUEMART_PRODUCT_DISPLAY"
+			description="MOD_VIRTUEMART_PRODUCT_DISPLAY_DESC">
+		    <option value="featured">MOD_VIRTUEMART_PRODUCT_FEATURED_PRODUCTS</option>
+		    <option value="latest">MOD_VIRTUEMART_PRODUCT_LATEST_PRODUCTS</option>
+		    <option value="random">MOD_VIRTUEMART_PRODUCT_RANDOM_PRODUCTS</option>
+		    <option value="topten">MOD_VIRTUEMART_PRODUCT_BEST_SALES</option>
+        <option value="special">MOD_VIRTUEMART_PRODUCT_TABS_TITLE_TEXT_SPECIALS</option>
+        <option value="rating">MOD_VIRTUEMART_PRODUCT_TABS_TITLE_TEXT_TOP_RATING</option>
+		</field>
+    <field class="advancedSelect" name="carusel" type="list" default="0"
+      label="Enebled Carusel">
+        <option value="1">JYES</option>
+        <option value="0">JNO</option>
+    </field>  
+        <field name="max_items" type="text" default="2"
+            label="MOD_VIRTUEMART_PRODUCT_MAX_ITEMS"
+            description="MOD_VIRTUEMART_PRODUCT_MAX_ITEMS_DESC" />
+        <field name="products_per_row" type="text" default="1"
+            label="MOD_VIRTUEMART_PRODUCT_PRODUCTS_PER_ROW"
+            description="MOD_VIRTUEMART_PRODUCT_PRODUCTS_PER_ROW_DESC" />
+    <field class="advancedSelect" name="stock" type="list" default="0"
+      label="MOD_VIRTUEMART_PRODUCT_SHOW_STOCK">
+        <option value="1">JYES</option>
+        <option value="0">JNO</option>
+    </field>  
+		<field class="advancedSelect" name="source" type="vmproductcategories" multiple="multiple" default="" label="MOD_VIRTUEMART_PRODUCT_OPTION_CATEGORIES_SOURCE" description="MOD_VIRTUEMART_PRODUCT_OPTION_CATEGORIES_SOURCE_DESC"/>      
+
+        <field class="advancedSelect" name="outsource" type="vmproductcategories" multiple="multiple" default="" label="MOD_VIRTUEMART_PRODUCT_OPTION_CATEGORIES_OUTSOURCE" description="MOD_VIRTUEMART_PRODUCT_OPTION_CATEGORIES_OUTSOURCE_DESC"/>
+
+            <field name="vmcache" type="list" class="advancedSelect"
+                   default="0"
+                   label="MOD_VIRTUEMART_PRODUCT_CACHING_LABEL"
+                   description="MOD_VIRTUEMART_PRODUCT_CACHING_DESC"
+                    >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="vmcachetime" type="text"
+                   default="300"
+                   label="MOD_VIRTUEMART_PRODUCT_CACHING_TIME_LABEL"
+                   description="MOD_VIRTUEMART_PRODUCT_CACHING_TIME_DESC"
+                    />
+    </fieldset>
+    
+
+</form>

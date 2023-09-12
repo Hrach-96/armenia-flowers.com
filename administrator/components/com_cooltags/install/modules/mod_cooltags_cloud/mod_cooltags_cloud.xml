@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.3"
+	client="site"
+	method="upgrade">
+	<name>Cooltags Cloud</name>
+	<author>Artem Sidorov</author>
+	<creationDate>April 2015</creationDate>
+	<copyright>Copyright (C) 2015. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+	<authorEmail>dshnda@gmail.com</authorEmail>
+	<authorUrl>www.artofsites.ru</authorUrl>
+	<version>1.0</version>
+	<description>Shows a tag cloud from Virtuemart product tags. This requires com_cooltags component, Virtuemart 3 and Joomla 3.</description>
+	<files>
+		<filename module="mod_cooltags_cloud">mod_cooltags_cloud.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_cooltags_cloud.xml</filename>
+	</files>
+	<languages>
+		
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_STATISTICS" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="min_font"
+					type="text"
+					default="10"
+					label="Smallest font size"
+					description="" />
+					
+					<field
+					name="max_font"
+					type="text"
+					default="25"
+					label="Largest Font Size"
+					description="" />
+					
+					<field
+					name="limit"
+					type="text"
+					default="50"
+					label="Tags Limit"
+					description="How many tags at max?" />
+					
+					<field
+					name="catfilter"
+					type="list"
+					default="0"
+					label="Category Filter"
+					description="If the module is located on a Virtuemart category page, you can enable this to have it showing only tags from current category products.">
+					<option
+						value="2">Yes, category and children</option>
+						
+					<option
+						value="1">Yes, exact category</option>
+					<option
+						value="0">JNo</option>
+				</field>
+				
+					
+					</fieldset>
+					
+					
+					<fieldset name="advanced">
+					
+					<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+				
+				
+					
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>Wishlists</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>2019</creationDate>
+    <author>olejenya</author>
+    <authorEmail>olejenya-info@gmail.com</authorEmail>
+	<!--  The version string is recorded in the components table -->
+	<version>0.01</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Description of the Wishlists ...</description>
+
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+  	   to copy FROM in the package to install therefore files copied
+    	 in this section are copied from /site/ in the package -->
+	<files folder="site">
+	 	<folder>models</folder> 
+	 	<folder>views</folder> 
+		<folder>template</folder>
+		<filename>controller.php</filename>
+		<filename>wishlists.php</filename>
+		<filename>index.html</filename>
+		 <filename>router.php</filename>
+	</files>
+	 <languages folder="site/language">
+			<language tag="en-GB">en-GB/en-GB.com_wishlists.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_wishlists.ini</language>
+			<language tag="es-ES">es-ES/es-ES.com_wishlists.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_wishlists.ini</language>
+			<language tag="it-IT">it-IT/it-IT.com_wishlists.ini</language>
+	</languages> 
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu>VM2 Wishlists</menu>
+		<submenu>
+		<menu link="index.php?option=com_config&amp;view=component&amp;component=com_wishlists&amp;path=">COM_WHISHLISTS_MENU</menu>
+
+        </submenu>
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<filename>admin.wishlists.php</filename>
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+		</files>  
+		<languages folder="admin">
+		<language tag="en-GB">language/en-GB/en-GB.com_wishlists.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_wishlists.sys.ini</language>
+		
+		<language tag="de-DE">language/de-DE/de-DE.com_wishlists.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.com_wishlists.sys.ini</language>
+		
+		<language tag="es-ES">language/es-ES/es-ES.com_wishlists.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.com_wishlists.sys.ini</language>
+		
+		<language tag="fr-FR">language/fr-FR/fr-FR.com_wishlists.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.com_wishlists.sys.ini</language>
+		
+		<language tag="it-IT">language/it-IT/it-IT.com_wishlists.ini</language>
+		<language tag="it-IT">language/it-IT/it-IT.com_wishlists.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

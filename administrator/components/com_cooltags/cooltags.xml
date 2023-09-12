@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+    <name>com_cooltags</name>
+    <creationDate>2012-10-03</creationDate>
+    <copyright>Copyright (C) Nordmograph 2012. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+    <author>Adrien Roussel</author>
+    <authorEmail>contact@nordmograph.com</authorEmail>
+    <authorUrl>http://www.nordmograph.com</authorUrl>
+    <version>1.3</version>
+    <description>Tagging solution for Virtuemart 3</description>
+    <scriptfile>script.php</scriptfile>
+
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>cooltags.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>assets</folder>
+		<folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+    </files>
+    <languages folder="site">
+        <language tag="en-GB">language/en-GB.com_cooltags.ini
+        </language>
+    </languages>
+    <administration>
+        <menu img="components/com_cooltags/assets/images/s_com_cooltags.png" >COM_COOLTAGS</menu>
+        <submenu>         
+			<menu link="option=com_cooltags&amp;view=legacyswitch" view="legacyswitch"  alt="Legacy Switch">COM_COOLTAGS_LEGACYSWITCH</menu>
+        </submenu>
+        <submenu>
+            
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>cooltags.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+			<folder>install</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator">
+            <language tag="en-GB">language/en-GB.com_cooltags.ini
+            </language>
+            <language tag="en-GB">language/en-GB.com_cooltags.sys.ini
+            </language>
+        </languages>
+    </administration>
+</extension>

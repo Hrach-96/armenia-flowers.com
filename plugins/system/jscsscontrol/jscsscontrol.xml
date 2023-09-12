@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" version="3.0" group="system" method="upgrade">
+    <name>PLG_JSCSSCONTROL</name>
+    <version>3-1</version>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <author>lorem</author>
+    <copyright>Copyright 2014 Lorem. All rights reserved.</copyright>
+    <creationDate>01-Jan-2014</creationDate>
+    <description>PLG_JSCSSCONTROL_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="jscsscontrol">jscsscontrol.php</filename>
+        <filename plugin="jscsscontrol">index.html</filename>
+    </files>
+    <languages folder="language">
+        <language tag="de-DE">de-DE/de-DE.plg_system_jscsscontrol.ini</language>
+        <language tag="de-DE">de-DE/de-DE.plg_system_jscsscontrol.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_jscsscontrol.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_jscsscontrol.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="js" type="textarea" default="" rows="8" cols="80" label="PLG_JSCSSCONTROL_JS" description="PLG_JSCSSCONTROL_JSDESC" />
+                <field name="css" type="textarea" default="" rows="8" cols="80" label="PLG_JSCSSCONTROL_CSS" description="PLG_JSCSSCONTROL_CSSDESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension version="3.3" type="plugin" group="search" method="upgrade">
+	<name>plg_search_cooltagsearch</name>
+	<author>Artem Sidorov</author>
+	<creationDate>april 2015</creationDate>
+	<copyright>Copyright (C) 2015. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>dshnda@gmail.com</authorEmail>
+	<authorUrl>www.artofsites.ru</authorUrl>
+	<version>1.0</version>
+	<description>Allows Searching of CoolTags Component with search for product tags.</description>
+	<languages>
+	</languages>
+	<files>
+		<filename plugin="cooltagsearch">cooltagsearch.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="search_limit" type="text"
+					size="5"
+					default="50"
+					label="Search Limit"
+					description="Number of Search items to return"
+				/>
+				
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

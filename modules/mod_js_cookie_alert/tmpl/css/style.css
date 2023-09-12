@@ -1,0 +1,26 @@
+.cwcookielaw .cwcookiecontainer { width: auto; margin-top: 0px; position: relative; color: white; text-align: center;} 
+.cwcookielaw .cwcookiecontainer p { display:inline;font-size:14px; } 
+.cwcookielawbg { height: 47px; display:none; } 
+.cwcookielaw .cwcookiebubble { 
+background-image: url('../images/bubble.png'); 
+background-repeat: no-repeat; 
+position: absolute; 
+width: 330px; 
+height: 162px; 
+right: 400px; 
+top: 40px; 
+padding: 20px 15px 0 15px;
+display: none; 
+cursor: pointer; 
+z-index: 10001;
+
+}
+
+.cwcookiebubble .cwcookietitle { 
+margin-bottom: 5px;
+margin-top: 7px; 
+color: #2298ce;
+display: block;
+} 
+
+.cwcookiecontainer .cwcookiebubble p { margin: 0; padding: 0; color: #ffffff; line-height: 14px; font-size:12px; display:block;} 

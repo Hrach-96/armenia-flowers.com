@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metafile version="3.4.4" client="administrator">
+	<name>Armenian (hy-AM)</name>
+	<version>3.4.4.1</version>
+	<creationDate>2015-09-22</creationDate>
+	<author>Andrey Aleksanyants</author>
+	<authorEmail>aaleksanyants@yahoo.com</authorEmail>
+	<authorUrl>www.aleksanyants.com/armjoomla</authorUrl>
+	<copyright>Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>hy-AM administrator language</description>
+	<metadata>
+		<name>Armenian (hy-AM)</name>
+		<tag>hy-AM</tag>
+		<rtl>0</rtl>
+		<locale>hy_AM.utf-8, hy_AM, arm_AM, hy, armenian</locale>
+		<firstDay>1</firstDay>
+		<weekEnd>0,6</weekEnd>
+	</metadata>
+	<params />
+</metafile>

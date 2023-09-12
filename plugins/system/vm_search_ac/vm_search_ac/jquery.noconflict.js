@@ -1,0 +1,1 @@
+jqdaycounts = jQuery.noConflict();

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>VM - Search autocomplete</name>
+	<author>olejenya</author>
+	<authorEmail>olejenya-info@gmail.com</authorEmail>
+	<copyright>Copyright (C) 2019 virtuemart. All rights reserved.</copyright>
+	<license>GNU General Public License</license>
+	<version>1.0</version>
+	<description>VM - Search autocomplete</description>
+	<files>
+		<filename plugin="vm_search_ac">vm_search_ac.php</filename>
+		<folder>vm_search_ac</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_system_vm_search_ac.ini</language>
+		<language tag="en-GB">en-GB.plg_system_vm_search_ac.sys.ini</language>
+		<language tag="fr-FR">fr-FR.plg_system_vm_search_ac.ini</language>
+		<language tag="fr-FR">fr-FR.plg_system_vm_search_ac.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+		
+			<fieldset name="basic">
+				<field type="radio" name="loadmj" default="0" label="VMSEARCH_LOADMOBILEJOOMA" description="VMSEARCH_LOADMOBILEJOOMA_DESC">
+					<option value="0">VMSEARCH_NO</option>
+					<option value="1">VMSEARCH_YES</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field type="text" name="minChars" default='3' label="VMSEARCH_MIN_CHARS" description="VMSEARCH_MIN_CHARS_DESC" />
+				<field type="text" name="delay" default='400' label="VMSEARCH_DELAY" description="VMSEARCH_DELAY_DESC" />
+				<field type="radio" name="searchchilds" default="1" label="VMSEARCH_SEARCH_CHILDS">
+					<option value="0">VMSEARCH_NO</option>
+					<option value="1">VMSEARCH_YES</option>
+				</field>
+				<field type="radio" name="searchsku" default="1" label="VMSEARCH_SEARCH_SKU">
+					<option value="0">VMSEARCH_NO</option>
+					<option value="1">VMSEARCH_YES</option>
+				</field>
+				<field type="radio" name="searchcat" default="0" label="VMSEARCH_SEARCH_CAT">
+					<option value="0">VMSEARCH_NO</option>
+					<option value="1">VMSEARCH_YES</option>
+				</field>
+				<field type="radio" name="searchmanuf" default="0" label="VMSEARCH_SEARCH_MANUF">
+					<option value="0">VMSEARCH_NO</option>
+					<option value="1">VMSEARCH_YES</option>
+				</field>
+				<field type="text" name="max" default='5' label="VMSEARCH_MAX_RESULTS" description="VMSEARCH_MAX_RESULTS_DESC" />
+				<field type="text" name="width" default='200' label="VMSQC_WIDTH" description="VMSQC_WIDTH_DESC" />
+				<field type="radio" name="showimg" default="1" label="VMSEARCH_SHOW_THUMB">
+					<option value="0">VMSEARCH_NO</option>
+					<option value="1">VMSEARCH_YES</option>
+				</field>
+				<field type="radio" name="showsku" default="1" label="VMSEARCH_SHOW_SKU">
+					<option value="0">VMSEARCH_NO</option>
+					<option value="1">VMSEARCH_YES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
+

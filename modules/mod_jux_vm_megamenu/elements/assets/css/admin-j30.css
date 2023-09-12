@@ -1,0 +1,72 @@
+/**
+ * @version		$Id$
+ * @author		JoomlaUX
+ * @package		Joomla.Site
+ * @subpackage	mod_jux_k2_megamenu
+ * @copyright	Copyright (C) 2008 - 2013 JoomlaUX. All rights reserved.
+ * @license		License GNU General Public License version 2 or later; see LICENSE.txt, see LICENSE.php
+ */
+.hide {
+    display: none;
+}
+ #jux-admin-megamenu [class^="icon-"], #jux-admin-megamenu [class*=" icon-"] {
+    background-image: url("../images/glyphicons-halflings.png");
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 1px;
+    vertical-align: text-top;
+    width: 14px;
+}
+ #jux-admin-megamenu .icon-arrow-left {
+  background-position: -240px -96px;
+}
+#jux-admin-megamenu .icon-arrow-right {
+  background-position: -264px -96px;
+}
+#jux-admin-megamenu .icon-arrow-up {
+  background-position: -289px -96px;
+}
+#jux-admin-megamenu .icon-arrow-down {
+  background-position: -312px -96px;
+}
+#jux-admin-megamenu .icon-align-left {
+  background-position: -264px -48px;
+}
+#jux-admin-megamenu .icon-align-center {
+  background-position: -288px -48px;
+}
+#jux-admin-megamenu .icon-align-right {
+  background-position: -312px -48px;
+}
+#jux-admin-megamenu .icon-align-justify {
+  background-position: -336px -48px;
+}
+#jux-admin-megamenu .icon-plus {
+  background-position: -408px -96px;
+}
+#jux-admin-megamenu .icon-minus {
+  background-position: -433px -96px;
+}
+#jux-admin-megamenu .icon-resize-full {
+  background-position: -360px -96px;
+}
+#jux-admin-megamenu .icon-resize-small {
+  background-position: -384px -96px;
+}
+#jux-admin-megamenu .icon-search {
+    background-position: -48px 0;
+}
+#jux-admin-megamenu .juxm-admin-clear-config{
+	background: none repeat scroll 0 0 #E6E6E6;
+    border: 1px solid #CCCCCC;
+    padding: 5px 10px;
+}
+#jux-admin-megamenu .icon-remove {
+    background: url("../images/icon_remove.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#jux-admin-megamenu [class^="icon-"]:before,#jux-admin-megamenu [class*=" icon-"]:before{
+	content:"" !important;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.6" client="site" method="upgrade">
+	<name>JS Cookie Alert</name>
+	<author>Jakub Skowroński</author>
+ <copyright> All rights reserved.</copyright> 
+        <license>GPL 2.0</license> 
+        <authorEmail></authorEmail> 
+        <authorUrl></authorUrl> 
+		<version>1.0</version>
+	<description></description>
+	<files>
+		<filename module="mod_js_cookie_alert">mod_js_cookie_alert.xml</filename>
+		<filename module="mod_js_cookie_alert">mod_js_cookie_alert.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+		<folder>tmpl/images/</folder>
+		<folder>tmpl/css/</folder>
+		<folder>tmpl/js/</folder>
+ 	</files>	
+<config>
+<fields name="params">
+<fieldset name="basic">
+<field name="js_alert_jquery" type="radio" default="1" label="Load jQuery" description="Load jQuery library">
+<option value="1">Yes</option>
+<option value="2">No</option>
+</field>
+<field name="js_cwmessage" type="textarea" filter="safehtml" cols="30" rows="5"   default="Please note this website requires cookies in order to function correctly, they do not store any specific information about you personally." label="Message" description=" " />
+<field name="js_cwbubbletitle" type="text"  default="Cookie Laws within the EU" label="Popup Title" description=" " />
+<field name="js_cwbubblemessage" type="textarea" filter="safehtml" cols="30" rows="5"  default="On 26th May 2012, new laws came into force in the EU that affect most web sites. If cookies are used in a site, the Privacy and Electronic Communications (EC Directive) (Amendment) Regulations 2011 (UK Government Regulations) asks that the website user must give consent to the use and placing of the cookies." label="Popup Message" description=" " />
+<field name="js_cwagree" type="text"  default="Accept Cookies" label="Agree" description=" " />
+<field name="js_cwmoreinfo" type="text"  default="Read more..." label="Read more" description=" " />
+ </fieldset>
+	</fields>
+    </config>
+</extension>

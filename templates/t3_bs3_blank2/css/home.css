@@ -1,0 +1,152 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         https://github.com/t3framework/ 
+ *------------------------------------------------------------------------------
+*/
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+/* joomla 3.x 400px */
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+.home h1 {
+  line-height: 1;
+}
+.home h2 {
+  font-size: 21px;
+}
+@media screen and (min-width: 768px) {
+  .home h2 {
+    font-size: 30px;
+  }
+}
+.home .jumbotron {
+  background-color: transparent;
+  position: relative;
+  margin-bottom: 0;
+}
+.home .t3-sl-1 {
+  padding: 0;
+  background: #ffffff;
+  color: #596067;
+  border-bottom: 1px solid #eeeeee;
+}
+.home .t3-sl-1 .jumbotron {
+  border-radius: 0;
+}
+.home .t3-sl-1 .jumbotron .btn {
+  margin-top: 20px;
+}
+.home .t3-sl-2 {
+  text-align: center;
+}
+.home .t3-sl-2 .img-responsive {
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .home .t3-sl-2 p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.home .t3-sl-3 p > img {
+  margin-top: 20px;
+}
+@media screen and (min-width: 992px) {
+  .home .t3-sl-3 p > img {
+    margin-top: 0;
+  }
+}
+.home .t3-sl-3,
+.home .t3-sl-4 {
+  border-top: 1px solid #eeeeee;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .home .t3-sl-3 p,
+  .home .t3-sl-4 p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.home .t3-sl-3 .jumbotron,
+.home .t3-sl-4 .jumbotron {
+  padding-top: 0;
+}
+.home .t3-sl-3 .jumbotron h1,
+.home .t3-sl-4 .jumbotron h1 {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.home .t3-sl-3 .jumbotron p,
+.home .t3-sl-4 .jumbotron p {
+  font-size: 18px;
+  line-height: 1.25;
+  color: #999999;
+}
+@media screen and (min-width: 768px) {
+  .home .t3-sl-3 .jumbotron p,
+  .home .t3-sl-4 .jumbotron p {
+    font-size: 21px;
+  }
+}
+.home .t3-sl-5 {
+  background: #ffffff;
+  color: #596067;
+  border-top: 1px solid #eeeeee;
+  padding: 0;
+}
+.home .t3-sl-5 .jumbotron {
+  border-radius: 0;
+  margin-bottom: 0;
+}

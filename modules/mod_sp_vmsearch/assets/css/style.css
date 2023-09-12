@@ -1,0 +1,45 @@
+.sp-vmsearch{
+    position: relative;
+}
+.sp-vmsearch form{
+    margin: 0;
+}
+
+
+.sp-vmsearch-categorybox{
+	position: relative;
+}
+
+.sp-vmsearch-categories{
+}
+
+.category-name-wrapper{
+    position: relative;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+
+.category-name{
+}
+
+.sp-vmsearch-categorybox{
+}
+
+.search-input-wrapper{
+}
+.search-button-wrapper{
+}
+
+.search-button-wrapper button{
+
+}
+
+.search-input-wrapper input{
+}
+
+.sp-vmsearch-categorybox .cat-button,
+.sp-vmsearch-categorybox .sp-vmsearch-categories {
+}
+.sp-vmsearch-categorybox .sp-vmsearch-categories{
+    z-index: 1;
+}

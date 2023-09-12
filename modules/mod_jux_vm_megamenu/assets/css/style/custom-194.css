@@ -1,0 +1,30 @@
+/*===============================
+ time:1421738890
+================================================================================*/
+#juxvm_mm_194 .jux-megamenu.animate .mega > .mega-dropdown-menu,
+#juxvm_mm_194 .jux-megamenu.animate.slide .mega>.mega-dropdown-menu>div{transition-duration:400ms;-webkit-transition-duration:400ms;-ms-transition-duration:400ms;-o-transition-duration:400ms}#juxvm_mm_194{background:#6a6aab;background:-moz-linear-gradient(top, #6a6aab 0%, #818dd1 50%, #8994d6 50%,#515f96 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#6a6aab), color-stop(50%,#818dd1), color-stop(50%,#8994d6), color-stop(100%,#515f96));background:-webkit-linear-gradient(top, #6a6aab 0%,#818dd1 50%,#8994d6 50%,#515f96 100%);background:-o-linear-gradient(top,  #6a6aab 0%,#818dd1 50%,#8994d6 50%,#515f96 100%);background:-ms-linear-gradient(top,  #6a6aab 0%,#818dd1 50%,#8994d6 50%,#515f96 100%);background:linear-gradient(to bottom,  #6a6aab 0%,#818dd1 50%,#8994d6 50%,#515f96 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a6aab', endColorstr='#515f96',GradientType=0 );border-width:none;border-style:;border-color:;margin:0px
+0px 0px 0px;padding:8px
+0px 8px 0px;border-radius:5px 0px 0px 5px;-moz-border-radius:5px 0px 0px 5px;-o-border-radius:5px 0px 0px 5px;-webkit-border-radius:5px 0px 0px 5px;-ms-border-radius:5px 0px 0px 5px}#juxvm_mm_194 .jux-megamenu .dropdown-menu{background-color:#383838;border-width:3px;border-style:none;border-color:#e40035;padding:0px
+0px 0px 0px;margin:0px
+0px 0px 0px;border-radius:0px 5px 5px 0px;-moz-border-radius:0px 5px 5px 0px;-o-border-radius:0px 5px 5px 0px;-webkit-border-radius:0px 5px 5px 0px;-ms-border-radius:0px 5px 5px 0px;box-shadow:;-moz-box-shadow:;-webkit-box-shadow:;-o-box-shadow:;-ms-box-shadow: }#juxvm_mm_194 .jux-nav>li>a{border-width:none;border-style:;border-color:;padding:10px;color:#443ce6}#juxvm_mm_194 .jux-nav .dropdown-toggle
+.caret{border-top-color:#443ce6;border-bottom-color:#443ce6}#juxvm_mm_194 .jux-nav > li > a:hover,
+#juxvm_mm_194 .jux-nav > li > a:focus,
+#juxvm_mm_194 .jux-nav > li.current > a,
+#juxvm_mm_194 .jux-nav > li.active > a,
+#juxvm_mm_194 .jux-nav>li:hover>a{background:#383838;color:#fcf4f6}#juxvm_mm_194 .jux-nav .dropdown-toggle:hover
+.caret{border-top-color:#fcf4f6;border-bottom-color:#fcf4f6}#juxvm_mm_194.jux-vertical.jux-right .jux-nav>li.mega>a:after{border-color:transparent #443ce6}#juxvm_mm_194.jux-vertical.jux-left .jux-nav>li.mega>a:after{border-color:transparent transparent transparent #443ce6}#juxvm_mm_194.jux-vertical.jux-right .jux-nav>li.mega:hover>a:after{border-color:transparent #fcf4f6}#juxvm_mm_194.jux-vertical.jux-left .jux-nav>li.mega:hover>a:after{border-color:transparent transparent transparent #fcf4f6}@media (max-width: 767px){#juxvm_mm_194 .jux-nav > li.mega > a:after,
+#juxvm_mm_194.jux-vertical.jux-right .jux-nav > li.mega > a:after,
+.jux-vertical.jux-left .jux-nav>li.mega>a:after{border-color:#443ce6 transparent !important}#juxvm_mm_194 .jux-nav > li.mega:hover > a:after,
+#juxvm_mm_194.jux-vertical.jux-right .jux-nav > li.mega:hover > a:after,
+#juxvm_mm_194.jux-vertical.jux-left .jux-nav>li.mega:hover>a:after{border-color:#fcf4f6 transparent !important}}#juxvm_mm_194 .jux-megamenu .dropdown-menu
+a{border-width:none;border-style:;border-color:;padding:0px
+2px 0px 10px;margin:0px
+0px 0px 0px;color:#fff}#juxvm_mm_194 .jux-megamenu .dropdown-menu li > a:hover,
+#juxvm_mm_194 .jux-megamenu .dropdown-menu li > a:focus,
+#juxvm_mm_194 .dropdown-menu li > a:hover,
+#juxvm_mm_194 .dropdown-menu li.current > a,
+#juxvm_mm_194 .dropdown-menu li.active > a,
+#juxvm_mm_194 .dropdown-menu li > a:focus,
+#juxvm_mm_194 .dropdown-submenu:hover>a{background:#000;color:#f70539}#juxvm_mm_194 .jux-megamenu .dropdown-submenu>a:after{border-color:#fff}#juxvm_mm_194 .jux-megamenu .dropdown-submenu:hover>a:after{border-color:#f70539}@media (max-width: 767px){#juxvm_mm_194 .jux-megamenu .dropdown-submenu > a:after,
+#juxvm_mm_194 .jux-megamenu .mega-group>a:after{border-color:#fff transparent !important}#juxvm_mm_194 .jux-megamenu .dropdown-submenu:hover > a:after,
+#juxvm_mm_194 .jux-megamenu .mega-group:hover>a:after{border-color:#f70539 transparent !important}}

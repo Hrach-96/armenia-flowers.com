@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5" method="upgrade">
+	<name>Overrides and jQuery ,Onestepcheckout plugins in package</name>
+	<packagename>pkg_onestepcheckout</packagename>
+	<version>1.0.0</version>
+	<creationDate>09-13-2013</creationDate>
+	<author>Neo Hoang</author>
+	<authorEmail>info@cmsmart.net</authorEmail>
+	<authorUrl>http://cmsmart.net</authorUrl>
+	<copyright>(C) 2012 Cmsmart Team. All rights reserved.</copyright>
+	<license>GNU/GPL Ver.2</license>
+	<description>Package installer for OVERRIDES and jQuery system plugins</description>	
+	<files>
+	   <file type="plugin" id="plg_system_overrides" group="system">plg_system_overrides_v2.0.zip</file>
+	   <file type="plugin" id="plg_system_jquery" group="system">plg_system_jquery_v2.0.zip</file>
+	   <file type="plugin" id="plg_system_onestepcheckout" group="system">plg_system_onestepcheckout_v3.0.zip</file>
+	</files>
+</extension>

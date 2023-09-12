@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension method="upgrade" version="3.3" type="plugin" group="vmcustom" >
+    <name>VMCustom - JMSYoutube</name>
+    <creationDate>Otober 2013</creationDate>
+    <author>Joommasters</author>
+    <authorUrl>http://www.joommasters.com</authorUrl>
+    <copyright>Copyright (C) 2009-2013 Joommasters. All rights reserved.</copyright>
+    <license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <version>1.0</version>
+    <description>JMS youtube for Virtuemart plugin</description>    
+    <files>
+        <filename plugin="jmsyoutube">jmsyoutube.php</filename>
+        <folder>jmsyoutube</folder>
+    </files>
+    <params addpath="/administrator/components/com_virtuemart/elements">
+       <param type="vmjpluginwarning" />			
+	        <param name="width" type="text"  size="30"  default="300" label="Width" description="width" />
+			<param name="height" type="text"  size="30"  default="200" label="Height" description="height" />
+			<param name="border_width" type="text"  size="10"  default="1" label="Border width" description="Border width" />
+			<param name="border_color" type="text"  size="15"  default="#000000" label="Border color" description="Border color" />
+			<param  name="autoplay" 
+					type="radio"
+					default="0"
+					description="Auto play"
+					label="Auto play"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</param>
+			<param  name="relate_video" 
+					type="radio"
+					default="1"
+					description="Related videos"
+					label="Related videos"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</param>
+			<param  name="youtube_title" 
+					type="radio"
+					default="1"
+					description="Youtbe title"
+					label="Youtbe title"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</param>
+			<param  name="controlbar" 
+					type="radio"
+					default="1"
+					description="Control bar"
+					label="Control bar"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</param>
+			<param  name="fade_control" 
+					type="radio"
+					default="1"
+					description="Fade-out control bar"
+					label="Fade-out control bar"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</param>
+			<param  name="progress_color" 
+					type="radio"
+					default="red"
+					description="Progress bar color"
+					label="Progress bar color"
+					>
+					<option value="red">red</option>
+					<option value="white">white</option>
+			</param>
+			<param  name="youtube_theme" 
+					type="radio"
+					default="dark"
+					description="youtube theme"
+					label="Youtube theme"
+					>
+					<option value="dark">dark</option>
+					<option value="light">light</option>
+			</param>
+    </params>
+</extension>

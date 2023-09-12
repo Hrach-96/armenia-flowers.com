@@ -1,0 +1,25 @@
+/*===============================
+ time:1419483111
+================================================================================*/
+#juxvm_mm_241 .jux-megamenu.animate .mega > .mega-dropdown-menu,
+#juxvm_mm_241 .jux-megamenu.animate.slide .mega>.mega-dropdown-menu>div{transition-duration:400ms;-webkit-transition-duration:400ms;-ms-transition-duration:400ms;-o-transition-duration:400ms}#juxvm_mm_241{background:#bd3535;background:-moz-linear-gradient(top, #bd3535 0%, #393939 50%, #4b30d1 50%,#131313 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#bd3535), color-stop(50%,#393939), color-stop(50%,#4b30d1), color-stop(100%,#131313));background:-webkit-linear-gradient(top, #bd3535 0%,#393939 50%,#4b30d1 50%,#131313 100%);background:-o-linear-gradient(top,  #bd3535 0%,#393939 50%,#4b30d1 50%,#131313 100%);background:-ms-linear-gradient(top,  #bd3535 0%,#393939 50%,#4b30d1 50%,#131313 100%);background:linear-gradient(to bottom,  #bd3535 0%,#393939 50%,#4b30d1 50%,#131313 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd3535', endColorstr='#131313',GradientType=0 );border-width:none;border-style:;border-color:;padding:10px
+10px 10px 10px}#juxvm_mm_241 .jux-megamenu .dropdown-menu{background-color:#db0404;border-width:none;border-style:;border-color:;box-shadow:;-moz-box-shadow:;-webkit-box-shadow:;-o-box-shadow:;-ms-box-shadow: }#juxvm_mm_241 .jux-nav>li>a{border-width:none;border-style:;border-color:;color:#333}#juxvm_mm_241 .jux-nav .dropdown-toggle
+.caret{border-top-color:#333;border-bottom-color:#333}#juxvm_mm_241 .jux-nav > li > a:hover,
+#juxvm_mm_241 .jux-nav > li > a:focus,
+#juxvm_mm_241 .jux-nav > li.current > a,
+#juxvm_mm_241 .jux-nav > li.active > a,
+#juxvm_mm_241 .jux-nav>li:hover>a{background:#945656;color:#08c}#juxvm_mm_241 .jux-nav .dropdown-toggle:hover
+.caret{border-top-color:#08c;border-bottom-color:#08c}@media (max-width: 767px){#juxvm_mm_241 .jux-nav > li.mega > a:after,
+#juxvm_mm_241.jux-vertical.jux-right .jux-nav > li.mega > a:after,
+.jux-vertical.jux-left .jux-nav>li.mega>a:after{border-color:#333 transparent !important}#juxvm_mm_241 .jux-nav > li.mega:hover > a:after,
+#juxvm_mm_241.jux-vertical.jux-right .jux-nav > li.mega:hover > a:after,
+#juxvm_mm_241.jux-vertical.jux-left .jux-nav>li.mega:hover>a:after{border-color:#08c transparent !important}}#juxvm_mm_241 .jux-megamenu .dropdown-menu
+a{border-width:none;border-style:;border-color:;color:#333}#juxvm_mm_241 .jux-megamenu .dropdown-menu li > a:hover,
+#juxvm_mm_241 .jux-megamenu .dropdown-menu li > a:focus,
+#juxvm_mm_241 .dropdown-menu li > a:hover,
+#juxvm_mm_241 .dropdown-menu li.current > a,
+#juxvm_mm_241 .dropdown-menu li.active > a,
+#juxvm_mm_241 .dropdown-menu li > a:focus,
+#juxvm_mm_241 .dropdown-submenu:hover>a{background:#fffff;color:#08c}#juxvm_mm_241 .jux-megamenu .dropdown-submenu>a:after{border-color:#333}#juxvm_mm_241 .jux-megamenu .dropdown-submenu:hover>a:after{border-color:#08c}@media (max-width: 767px){#juxvm_mm_241 .jux-megamenu .dropdown-submenu > a:after,
+#juxvm_mm_241 .jux-megamenu .mega-group>a:after{border-color:#333 transparent !important}#juxvm_mm_241 .jux-megamenu .dropdown-submenu:hover > a:after,
+#juxvm_mm_241 .jux-megamenu .mega-group:hover>a:after{border-color:#08c transparent !important}}

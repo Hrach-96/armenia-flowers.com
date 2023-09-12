@@ -1,0 +1,796 @@
+/**
+ * @version		$Id$
+ * @author		JoomlaUX
+ * @package		Joomla.Site
+ * @subpackage	mod_jux_k2_megamenu
+ * @copyright	Copyright (C) 2008 - 2013 JoomlaUX. All rights reserved.
+ * @license		License GNU General Public License version 2 or later; see LICENSE.txt, see LICENSE.php
+ */
+
+/* ADMIN TOOLBOX
+---------------------------------------------------*/
+.admin-inline-toolbox {
+  margin:0 0 20px 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  background: #eee;
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6; 
+}
+
+.admin-inline-toolbox ul {
+  margin: 0;
+  padding: 0;
+}
+
+.admin-inline-toolbox li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+}
+
+/* Fullscreen Toggle */
+.jux-admin-tog-fullscreen,
+.juxm-admin-clear-config{
+  border: 1px solid #ccc;
+  background: #e6e6e6;
+  padding: 5px 10px;
+}
+
+
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------*/
+/* jux MEGAMENU BASE
+---------------------------------------------------*/
+
+.jux-megamenu .mega-inner {
+  padding: 10px;
+  *zoom: 1;
+}
+.jux-megamenu .mega-inner:before,
+.jux-megamenu .mega-inner:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.jux-megamenu .mega-inner:after {
+  clear: both;
+}
+.jux-megamenu .row-fluid + .row-fluid {
+  padding-top: 10px;
+  border-top: 1px solid #eeeeee;
+}
+.jux-megamenu .mega > .mega-dropdown-menu {
+  min-width: 200px;
+  display: none;
+}
+.jux-megamenu .mega.open > .mega-dropdown-menu,
+.jux-megamenu .mega.dropdown-submenu:hover > .mega-dropdown-menu {
+  display: block;
+}
+.jux-megamenu .mega-group {
+  *zoom: 1;
+}
+.jux-megamenu .mega-group:before,
+.jux-megamenu .mega-group:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.jux-megamenu .mega-group:after {
+  clear: both;
+}
+.jux-megamenu .mega-nav .mega-group > .mega-group-title,
+.jux-megamenu .dropdown-menu .mega-nav .mega-group > .mega-group-title,
+.jux-megamenu .dropdown-menu .active .mega-nav .mega-group > .mega-group-title {
+  background: inherit;
+  color: inherit;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.jux-megamenu .mega-nav .mega-group > .mega-group-title:hover,
+.jux-megamenu .dropdown-menu .mega-nav .mega-group > .mega-group-title:hover,
+.jux-megamenu .dropdown-menu .active .mega-nav .mega-group > .mega-group-title:hover,
+.jux-megamenu .mega-nav .mega-group > .mega-group-title:active,
+.jux-megamenu .dropdown-menu .mega-nav .mega-group > .mega-group-title:active,
+.jux-megamenu .dropdown-menu .active .mega-nav .mega-group > .mega-group-title:active,
+.jux-megamenu .mega-nav .mega-group > .mega-group-title:focus,
+.jux-megamenu .dropdown-menu .mega-nav .mega-group > .mega-group-title:focus,
+.jux-megamenu .dropdown-menu .active .mega-nav .mega-group > .mega-group-title:focus {
+  background: inherit;
+  color: inherit;
+}
+.jux-megamenu .mega-group-ct {
+  margin: 0;
+  padding: 0;
+  *zoom: 1;
+}
+.jux-megamenu .mega-group-ct:before,
+.jux-megamenu .mega-group-ct:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.jux-megamenu .mega-group-ct:after {
+  clear: both;
+}
+.jux-megamenu .mega-group-ct > .row-fluid > [class*="span"] > .mega-inner {
+  padding: 0;
+}
+.jux-megamenu .span12.mega-col-nav .mega-inner {
+  padding: 5px;
+}
+.jux-megamenu .mega-nav,
+.jux-megamenu .dropdown-menu .mega-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.jux-megamenu .mega-nav > li,
+.jux-megamenu .dropdown-menu .mega-nav > li {
+  list-style: none;
+  margin-left: 0;
+}
+.jux-megamenu .mega-nav > li a,
+.jux-megamenu .dropdown-menu .mega-nav > li a {
+  white-space: normal;
+}
+.jux-megamenu .mega-group > .mega-nav,
+.jux-megamenu .dropdown-menu .mega-group > .mega-nav {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.jux-megamenu .mega-nav .dropdown-submenu > a::after {
+  margin-right: 5px;
+}
+.jux-megamenu .jux-module {
+  margin-bottom: 10px;
+}
+.jux-megamenu .jux-module .module-title {
+  margin-bottom: 0;
+}
+.jux-megamenu .jux-module .module-ct {
+  margin: 0;
+  padding: 0;
+}
+.jux-megamenu .mega-align-left > .dropdown-menu {
+  left: 0;
+}
+.jux-megamenu .mega-align-right > .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+.jux-megamenu .mega-align-center > .dropdown-menu {
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+.jux-megamenu .dropdown-submenu.mega-align-left > .dropdown-menu {
+  left: 100%;
+}
+.jux-megamenu .dropdown-submenu.mega-align-right > .dropdown-menu {
+  left: auto;
+  right: 100%;
+}
+.jux-megamenu .mega-align-justify {
+  position: static;
+}
+.jux-megamenu .mega-align-justify > .dropdown-menu {
+  left: 0;
+  margin-left: 0;
+  top: auto;
+}
+.jux-megamenu .mega-caption {
+  display: block;
+  white-space: nowrap;
+}
+.jux-megamenu .nav .caret,
+.jux-megamenu .dropdown-submenu .caret,
+.jux-megamenu .mega-menu .caret {
+  display: none;
+}
+.jux-megamenu .nav > .dropdown > .dropdown-toggle .caret {
+  display: inline-block;
+}
+.jux-megamenu .nav [class^="icon-"],
+.jux-megamenu .nav [class*=" icon-"] {
+  margin-right: 5px;
+}
+@media (min-width: 768px) {
+  .jux-megamenu.animate .mega > .mega-dropdown-menu {
+    transition: all 400ms;
+    -webkit-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -o-transition: all 400ms;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    opacity: 0;
+  }
+  .jux-megamenu.animate .mega.animating > .mega-dropdown-menu {
+    display: block!important;
+  }
+  .jux-megamenu.animate .mega.open > .mega-dropdown-menu,
+  .jux-megamenu.animate .mega.animating.open > .mega-dropdown-menu {
+    opacity: 1;
+  }
+  .jux-megamenu.animate.zoom .mega > .mega-dropdown-menu {
+    transform: scale(0, 0);
+    transform-origin: 20% 20%;
+    -webkit-transform: scale(0, 0);
+    -webkit-transform-origin: 20% 20%;
+    -ms-transform: scale(0, 0);
+    -ms-transform-origin: 20% 20%;
+    -o-transform: scale(0, 0);
+    -o-transform-origin: 20% 20%;
+  }
+  .jux-megamenu.animate.zoom .mega.open > .mega-dropdown-menu {
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+  }
+  .jux-megamenu.animate.elastic .level0 > .mega > .mega-dropdown-menu {
+    transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+  }
+  .jux-megamenu.animate.elastic .mega > .mega-dropdown-menu {
+    transform: scale(0, 1);
+    transform-origin: 10% 0;
+    -webkit-transform: scale(0, 1);
+    -webkit-transform-origin: 10% 0;
+    -ms-transform: scale(0, 1);
+    -ms-transform-origin: 10% 0;
+    -o-transform: scale(0, 1);
+    -o-transform-origin: 10% 0;
+  }
+  .jux-megamenu.animate.elastic .mega.open > .mega-dropdown-menu {
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+  }
+  .jux-megamenu.animate.slide .mega.animating > .mega-dropdown-menu {
+    overflow: hidden;
+  }
+  .jux-megamenu.animate.slide .mega > .mega-dropdown-menu > div {
+    transition: all 400ms;
+    -webkit-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -o-transition: all 400ms;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    margin-top: -100%;
+  }
+  .jux-megamenu.animate.slide .mega.open > .mega-dropdown-menu > div {
+    margin-top: 0%;
+  }
+  .jux-megamenu.animate.slide .mega .mega > .mega-dropdown-menu {
+    min-width: 0;
+  }
+  .jux-megamenu.animate.slide .mega .mega > .mega-dropdown-menu > div {
+    min-width: 200px;
+    margin-top: 0;
+    margin-left: -500px;
+  }
+  .jux-megamenu.animate.slide .mega .mega.open > .mega-dropdown-menu > div {
+    margin-left: 0;
+  }
+}
+
+#jux-admin-megamenu {
+  min-height: 800px;
+  background: url(../images/grid-bg.jpg) top left;
+	position: relative;
+}
+
+.admin-inline-toolbox h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+.jux-admin-control-fixed {
+    height: 100%;
+    left: 0;
+    margin: 0 !important;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+.jux-admin-megamenu .disabled {
+    cursor: default;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* Intro
+---------------------*/
+#jux-admin-mm-intro {
+  float: left;
+  padding: 20px 200px 20px 20px;
+  text-shadow: 0 1px 1px white;
+}
+
+#jux-admin-mm-intro h3 {
+  margin-top: 0;
+}
+
+#jux-admin-mm-intro p {
+  display: block;
+  color: #999999;
+  overflow: hidden;
+}
+
+
+
+/* Toolbox
+---------------------*/
+#jux-admin-mm-tb {
+  float: left;
+  text-shadow: 0 1px 1px #fff;
+}
+
+#jux-admin-megamenu .admin-inline-toolbox {
+  
+}
+
+#jux-admin-mm-tb .admin-toolbox {
+  height: 119px;
+  padding: 20px;
+  display: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+#jux-admin-mm-tb .admin-toolbox h3 {
+  margin-top: 0;
+}
+
+#jux-admin-mm-tb .admin-toolbox ul {
+  margin-right: 20px;
+  float: left;
+}
+
+#jux-admin-mm-tb .admin-toolbox li > label {
+  font-size: 11px;
+  color: #999999;
+}
+
+#jux-admin-mm-tb .btn [class^="icon-"],
+#jux-admin-mm-tb .btn [class*=" icon-"] {
+  margin-right: 0;
+}
+
+
+/* Toolbox Actions ---- */
+.jux-admin-mm-row .toolbox-actions-group {
+  height: 100px;
+  position: absolute;
+  right: 20px;
+}
+
+.jux-admin-mm-row .toolbox-actions-group button {
+}
+
+
+/* Fullscreen Toggle */
+#navigation_params .jux-admin-tog-fullscreen {
+  position: absolute;
+  right: 0;
+  top: -50px;
+}
+
+
+/* The Menu
+---------------------*/
+#jux-admin-mm-container {
+  float: left;
+  margin-left: 20px;
+}
+
+
+/* Global Menu Inner padding ---*/
+.jux-megamenu .mega-inner {
+  padding: 10px;
+}
+
+
+/* Menu Grid ---*/
+.jux-megamenu .row-fluid + .row-fluid {
+  margin-top: 0;
+  border-top: 0;
+}
+
+.jux-megamenu .row-fluid [class*="span"] {
+  border: 1px dotted #cccccc;
+  border-radius: 3px;
+  transition: all 0.1s ease 0s;
+  -webkit-transition: all 0.1s ease 0s;
+  -moz-transition: all 0.1s ease 0s;
+  background: white;
+}
+
+
+/* The Nav ---*/
+.jux-megamenu .span12.mega-col-nav .mega-inner {
+  padding: 10px;
+}
+
+.jux-megamenu .nav > li {
+  margin-right: 20px;
+}
+
+.jux-megamenu .nav > li > a,
+.jux-megamenu .nav > li > span {
+  border: 1px solid #dddddd;
+  padding: 8px 20px;
+  background: #f2f2f2;
+  font-weight: bold;
+  border-radius: 3px;
+  transition: all 0.1s ease 0s;
+  -webkit-transition: all 0.1s ease 0s;
+  -moz-transition: all 0.1s ease 0s;
+}
+.jux-megamenu .nav > li.display-toggle > a, .jux-megamenu .nav > li.display-toggle > span {
+	border-color: #FF0000 !important;	
+}
+
+/* The caret */
+.jux-megamenu .mega-nav .dropdown-submenu > a::after {
+  margin-right: -10px;
+}
+
+
+/* Dropdown ---*/
+.jux-megamenu .dropdown-menu::before,
+.jux-megamenu .dropdown-menu::after {
+  display: none !important; /* Hide the Arrow */
+}
+
+.jux-megamenu .dropdown-menu {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  transition: all 0.1s ease 0s;
+  -webkit-transition: all 0.1s ease 0s;
+  -moz-transition: all 0.1s ease 0s;
+  min-width: 200px;
+  background: #f2f2f2;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  /* Fixed overlap with the Joomla Toolbar */
+}
+
+.jux-megamenu .dropdown-menu .dropdown-menu {
+  margin-top: 0;
+  margin-left: 11px;
+}
+
+.jux-megamenu .dropdown-submenu.mega-align-right .dropdown-menu {
+  margin-left: 0;
+  margin-right: 11px;
+}
+
+.jux-megamenu .mega-nav li {
+  margin-bottom: 5px;
+}
+
+.jux-megamenu .mega-nav li:last-child {
+  margin-bottom: 0;
+}
+
+.jux-megamenu .mega-nav li > a,
+.jux-megamenu .mega-nav li > span {
+  padding: 5px 20px 5px 10px;
+  border: 1px dotted #dddddd;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #999999;
+  transition: all 0.1s ease 0s;
+  -webkit-transition: all 0.1s ease 0s;
+  -moz-transition: all 0.1s ease 0s;
+  display: block;
+}
+.jux-megamenu .mega-nav li.display-toggle > a, .jux-megamenu .display-toggle .mega-nav li > span,.jux-megamenu .display-toggle .mega-nav li > a, .jux-megamenu .mega-nav li.display-toggle > span{
+	border-color: #FF0000 !important;
+}
+
+/* The group ---*/
+.jux-megamenu .mega-nav .mega-group > .mega-group-title,
+.jux-megamenu .dropdown-menu .mega-nav .mega-group > .mega-group-title {
+  padding: 5px 20px 5px 10px;
+  cursor: pointer;
+}
+
+.jux-megamenu .mega-group-ct {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  transition: all 0.1s ease 0s;
+  -webkit-transition: all 0.1s ease 0s;
+  -moz-transition: all 0.1s ease 0s;
+  border-radius: 3px;
+  background: #f2f2f2;
+}
+
+.jux-megamenu .mega-group-ct > .row-fluid > [class*="span"] > .mega-inner {
+  padding: 10px;
+}
+
+
+/* Module in Menu ---*/
+.jux-megamenu .jux-module {
+  pointer-events: none;
+  cursor: default;
+  position: relative;
+  margin: 0;
+  transition: all 0.1s ease 0s;
+  -webkit-transition: all 0.1s ease 0s;
+  -moz-transition: all 0.1s ease 0s;
+}
+
+.jux-megamenu .jux-module:after {
+  display: block;
+  position: absolute;
+  background: #eeeeee;
+  right: -10px;
+  bottom: -10px;
+  content: "Module";
+  width: 70px;
+  padding: 2px 0;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999999;
+  border-radius: 3px 0 0 0;
+  border: 1px dotted #dddddd;
+  border-width: 1px 0 0 1px;
+}
+
+.jux-megamenu .jux-module .module-inner {
+  opacity: .3;
+  font-size: 12px;
+}
+
+.jux-megamenu .jux-module .module-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.jux-megamenu .jux-module .module-ct {
+  overflow: hidden;
+  zoom: 1;
+}
+
+/* Reset List Style in Module */
+.jux-megamenu .jux-module ul,
+.jux-megamenu .jux-module .nav,
+.jux-megamenu .dropdown-menu .nav {
+  margin: 0 0 0 15px;
+}
+.jux-megamenu .jux-module ul li,
+.jux-megamenu .jux-module .nav li,
+.jux-megamenu .dropdown-menu .nav li {
+  list-style: disc;
+  display: list-item;
+  float: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.jux-megamenu .jux-module ul li a,
+.jux-megamenu .jux-module .nav li a,
+.jux-megamenu .dropdown-menu .jux-module li a {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  background: none;
+  font: inherit;
+  white-space: normal;
+}
+.jux-megamenu .jux-module ul li a:hover,
+.jux-megamenu .jux-module .nav li a:hover,
+.jux-megamenu .dropdown-menu .jux-module li a:hover,
+.jux-megamenu .jux-module ul li a:active,
+.jux-megamenu .jux-module .nav li a:active,
+.jux-megamenu .dropdown-menu .jux-module li a:active,
+.jux-megamenu .jux-module ul li a:focus,
+.jux-megamenu .jux-module .nav li a:focus,
+.jux-megamenu .dropdown-menu .jux-module li a:focus,
+.jux-megamenu .jux-module ul li a:visited,
+.jux-megamenu .jux-module .nav li a:visited,
+.jux-megamenu .dropdown-menu .jux-module li a:visited {
+  background: none;
+  color: inherit;
+  font: inherit;
+}
+
+
+.jux-megamenu [class*="span"].hover .jux-module:after,
+.jux-megamenu [class*="span"].selected .jux-module:after {
+  border-style: solid;
+  border-color: #666666;
+  background: #ffbb00;
+  color: #fff;
+}
+
+/* Fix Form display problem in Modules */
+.jux-megamenu .jux-module .control-group {
+  margin-bottom: 5px;
+}
+
+.jux-megamenu .jux-module .controls {
+  margin-left: 3px;
+}
+
+
+/* Open Item ---*/
+.jux-megamenu .nav > li.open > a,
+.jux-megamenu .open > a {
+  background: #333333 !important;
+  color: #fff !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+
+
+/* Hover Item ---*/
+.jux-megamenu .nav-child.hover,
+.jux-megamenu ul[class*="level"] > li > a.hover,
+.jux-megamenu ul[class*="level"] > li > span.hover,
+.jux-megamenu .row-fluid [class*="span"].hover {
+  background: #fffbf0 !important;
+  color: #333333 !important;
+  border: 1px solid #666666 !important;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+.jux-megamenu .display-toggle ul[class*="level"] > li > a.hover,
+.jux-megamenu .display-toggle ul[class*="level"] > li > span.hover,
+.jux-megamenu ul[class*="level"] > li.display-toggle > a.hover,
+.jux-megamenu ul[class*="level"] > li.display-toggle > span.hover{
+    border-color:#ff0000 !important;
+}
+
+.jux-megamenu ul[class*="level"] > li > a:hover,
+.jux-megamenu ul[class*="level"] > li > a:focus,
+.jux-megamenu ul[class*="level"] > li > a:active {
+  background: #fffbf0 !important;
+  color: #333333 !important;
+  text-shadow: 0 1px 1px #fff !important;
+}
+
+/* The caret */
+.jux-megamenu .mega-nav li a.hover:after,
+.jux-megamenu .mega-nav li a.selected:after {
+  border-left-color: #333333;
+}
+
+
+/* Selected Item ---*/
+.jux-megamenu .selected {
+  background: #fffbf0 !important;
+  color: #333333 !important;
+  border: 1px solid #666666 !important;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  text-shadow: 0 1px 1px white !important;
+}
+.jux-megamenu .display-toggle .selected{
+	border-color:#ff0000 !important;
+}
+/* The caption ---*/
+.mega-caption {
+  color: #999;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+
+/* Fix for Joomla! Default Admin Template
+--------------------------------------------------*/
+#jux-admin-megamenu .dropdown-menu a {
+  white-space: normal;
+}
+#jux-admin-megamenu .row-fluid [class*="span"] {
+  margin-left: 2.12766%;
+}
+#jux-admin-megamenu .row-fluid [class*="span"]:first-child {
+  margin-left: 0;
+}
+
+/* Fix right spacing for chzn chosen in Megamenu Admin UI */
+#jux-admin-megamenu ul.chzn-results {
+  margin-right: 4px;
+  float: none;
+}
+
+/* Fix submenu auto open on hover */
+#jux-admin-megamenu .dropdown-submenu:hover .dropdown-menu {
+  display: none;
+}
+
+#jux-admin-megamenu .dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.jux_style_btn {
+    border: 1px solid #ffffff;
+    display: inline-block;
+    height: 32px;
+    margin-right: 5px;
+    padding: 2px;
+    width: 38px;
+}
+.jux_style_btn i {
+    display: inline-block;
+    height: 32px;
+    width: 38px;
+}
+.jux-selected{
+	
+}
+.jux-hide{
+	display: none;
+}
+.jux-label{
+	display: block;
+    height: 20px;
+    line-height: 20px !important;
+    min-width: 210px;
+}
+.jux-megamenu .sub-hidden-collapse > div.jux-nav-child,
+.jux-megamenu .hidden-collapse,
+.jux-megamenu .hidden-collapse.hover,
+ .jux-megamenu .row-fluid .hidden-collapse.hover{
+	border:1px dotted #0038FF !important;
+} 
